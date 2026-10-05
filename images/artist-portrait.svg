@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img" aria-label="Illustrated portrait of the mural artist in the studio holding a paintbrush">
+  <title>Portrait of the mural artist</title>
+  <defs>
+    <linearGradient id="pw2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F4EDE2"/>
+      <stop offset="1" stop-color="#E4D9C6"/>
+    </linearGradient>
+    <linearGradient id="skin2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E2B48F"/>
+      <stop offset="1" stop-color="#C68F68"/>
+    </linearGradient>
+    <clipPath id="pc"><circle cx="400" cy="500" r="380"/></clipPath>
+  </defs>
+
+  <rect width="800" height="1000" fill="url(#pw2)"/>
+  <g clip-path="url(#pc)">
+    <!-- backdrop mural hints -->
+    <rect x="0" y="0" width="800" height="1000" fill="#EFE7DA"/>
+    <path d="M-40 260 C160 180 300 320 460 240 C600 170 700 280 840 220 L840 420 C700 480 600 370 460 440 C300 520 160 380 -40 460 Z" fill="#3D5B50" opacity=".5"/>
+    <circle cx="640" cy="180" r="90" fill="#E7B65C" opacity=".55"/>
+    <path d="M-40 700 C180 620 320 780 520 690 C680 618 760 720 840 690 L840 1000 L-40 1000 Z" fill="#C2643C" opacity=".35"/>
+    <g stroke="#8FA898" stroke-width="8" fill="none" stroke-linecap="round" opacity=".8">
+      <path d="M110 980 q20 -120 40 -200"/><path d="M700 980 q-20 -120 -40 -200"/>
+    </g>
+    <g fill="#EBDCC4" opacity=".85">
+      <ellipse cx="88" cy="820" rx="44" ry="19" transform="rotate(-32 88 820)"/>
+      <ellipse cx="176" cy="770" rx="44" ry="19" transform="rotate(28 176 770)"/>
+      <ellipse cx="722" cy="820" rx="44" ry="19" transform="rotate(32 722 820)"/>
+      <ellipse cx="634" cy="770" rx="44" ry="19" transform="rotate(-28 634 770)"/>
+    </g>
+  </g>
+
+  <!-- shoulders / apron -->
+  <path d="M400 1000 q-30 -190 -160 -230 q-140 -44 -180 60 q-30 90 -20 170 z" fill="#3D5B50"/>
+  <path d="M400 1000 q30 -190 160 -230 q140 -44 180 60 q30 90 20 170 z" fill="#3D5B50"/>
+  <path d="M330 700 q70 40 140 0 l24 300 H306 z" fill="#4F6B58"/>
+
+  <!-- neck + head -->
+  <path d="M356 640 h88 v70 q-44 30 -88 0 z" fill="#C68F68"/>
+  <circle cx="400" cy="470" r="150" fill="url(#skin2)"/>
+  <!-- hair -->
+  <path d="M250 460 q0 -170 150 -170 q150 0 150 170 q-30 -80 -150 -80 q-120 0 -150 80 z" fill="#3A2E28"/>
+  <path d="M250 470 q-30 130 10 220 q-46 -80 -40 -190 q4 -60 30 -30 z" fill="#3A2E28"/>
+  <path d="M550 470 q30 130 -10 220 q46 -80 40 -190 q-4 -60 -30 -30 z" fill="#3A2E28"/>
+  <path d="M290 420 q40 -80 110 -80 q70 0 110 80 q-50 -46 -110 -46 q-60 0 -110 46 z" fill="#4A3B33"/>
+  <!-- face -->
+  <g fill="#3A2E28">
+    <ellipse cx="350" cy="470" rx="13" ry="15"/>
+    <ellipse cx="452" cy="470" rx="13" ry="15"/>
+  </g>
+  <g fill="none" stroke="#3A2E28" stroke-width="7" stroke-linecap="round">
+    <path d="M328 428 q22 -16 44 -4"/>
+    <path d="M430 424 q22 -12 44 4"/>
+  </g>
+  <path d="M400 490 q-8 34 10 44" stroke="#B87E5A" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M366 566 q34 26 68 0" stroke="#A9603F" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <circle cx="300" cy="530" r="26" fill="#E2A98A" opacity=".55"/>
+  <circle cx="502" cy="530" r="26" fill="#E2A98A" opacity=".55"/>
+
+  <!-- brush in hand -->
+  <g transform="translate(600 800) rotate(24)">
+    <rect x="0" y="-12" width="220" height="24" rx="10" fill="#8E6C4C"/>
+    <rect x="214" y="-17" width="50" height="34" rx="10" fill="#C9BFB2"/>
+    <path d="M262 -21 q86 5 86 21 q0 16 -86 21 z" fill="#C2643C"/>
+    <circle cx="596" cy="800" r="34" fill="url(#skin2)"/>
+  </g>
+</svg>

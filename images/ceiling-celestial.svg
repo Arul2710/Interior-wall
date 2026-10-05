@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000" width="1400" height="1000" role="img" aria-label="Living room with a hand-painted celestial mural across the ceiling, sectional sofa and coffee table">
+  <title>Celestial ceiling mural in a living room</title>
+  <defs>
+    <linearGradient id="lw" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6F0E6"/>
+      <stop offset="1" stop-color="#E9E0D0"/>
+    </linearGradient>
+    <linearGradient id="lf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C9A98A"/>
+      <stop offset="1" stop-color="#AE8C6B"/>
+    </linearGradient>
+    <linearGradient id="night" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#28324E"/>
+      <stop offset="1" stop-color="#3A4668"/>
+    </linearGradient>
+    <linearGradient id="sofa" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D9CDBA"/>
+      <stop offset="1" stop-color="#C0B29C"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1400" height="1000" fill="url(#lw)"/>
+  <rect y="700" width="1400" height="300" fill="url(#lf)"/>
+
+  <!-- ceiling plane (perspective trapezoid) -->
+  <path d="M0 0 H1400 L1130 300 H270 Z" fill="url(#night)"/>
+  <!-- celestial mural -->
+  <g clip-path="none">
+    <circle cx="700" cy="150" r="118" fill="#F3E7C6"/>
+    <circle cx="700" cy="150" r="94" fill="#FBF3DC"/>
+    <circle cx="742" cy="128" r="26" fill="#E7DDBE" opacity=".9"/>
+    <g fill="#F6E3C0">
+      <circle cx="180" cy="70" r="7"/><circle cx="320" cy="130" r="5"/><circle cx="430" cy="60" r="6"/>
+      <circle cx="960" cy="80" r="6"/><circle cx="1120" cy="140" r="7"/><circle cx="1240" cy="60" r="5"/>
+      <circle cx="560" cy="230" r="5"/><circle cx="860" cy="240" r="6"/><circle cx="260" cy="220" r="5"/>
+      <circle cx="640" cy="60" r="5"/><circle cx="1040" cy="230" r="5"/><circle cx="100" cy="180" r="6"/>
+    </g>
+    <g fill="#D9A441" opacity=".9">
+      <path d="M520 60 l10 26 l28 2 l-22 18 l7 27 l-23 -15 l-23 15 l7 -27 l-22 -18 l28 -2 z"/>
+      <path d="M900 200 l8 20 l22 2 l-17 14 l5 21 l-18 -12 l-18 12 l5 -21 l-17 -14 l22 -2 z"/>
+    </g>
+    <!-- constellation -->
+    <g stroke="#F6E3C0" stroke-width="2.5" opacity=".65" fill="none">
+      <path d="M300 90 L360 160 L300 250 L400 230 L360 160"/>
+      <path d="M1000 100 L1080 170 L1020 250 L1120 230 L1080 170"/>
+    </g>
+    <g fill="#FBF3DC" opacity=".9">
+      <circle cx="300" cy="90" r="6"/><circle cx="360" cy="160" r="7"/><circle cx="300" cy="250" r="5"/><circle cx="400" cy="230" r="6"/>
+      <circle cx="1000" cy="100" r="6"/><circle cx="1080" cy="170" r="7"/><circle cx="1020" cy="250" r="5"/><circle cx="1120" cy="230" r="6"/>
+    </g>
+    <!-- shooting star -->
+    <g stroke="#FBF3DC" stroke-width="5" stroke-linecap="round" opacity=".85">
+      <path d="M480 200 L560 240"/>
+    </g>
+  </g>
+  <path d="M0 0 H1400 L1130 300 H270 Z" fill="none" stroke="#E9E0D0" stroke-width="10"/>
+
+  <!-- upper wall band -->
+  <rect x="0" y="300" width="1400" height="400" fill="#EFE4D5"/>
+  <rect x="0" y="300" width="1400" height="6" fill="#DCCBB2" opacity=".7"/>
+  <!-- wainscot -->
+  <g stroke="#DCCBB2" stroke-width="4">
+    <path d="M120 400 V700 M280 400 V700 M440 400 V700 M600 400 V700 M760 400 V700 M920 400 V700 M1080 400 V700 M1240 400 V700"/>
+  </g>
+  <rect x="0" y="470" width="1400" height="8" fill="#DCCBB2"/>
+  <rect x="0" y="676" width="1400" height="16" rx="6" fill="#E2D4BE"/>
+
+  <!-- framed art -->
+  <g>
+    <rect x="180" y="360" width="130" height="100" rx="6" fill="#F7F1E6" stroke="#A9855F" stroke-width="7"/>
+    <circle cx="245" cy="410" r="26" fill="#3D5B50" opacity=".85"/>
+    <rect x="380" y="360" width="130" height="100" rx="6" fill="#F7F1E6" stroke="#A9855F" stroke-width="7"/>
+    <path d="M394 448 l34 -46 l24 26 l16 -14 l28 34 z" fill="#C2643C" opacity=".8"/>
+    <rect x="1090" y="360" width="130" height="100" rx="6" fill="#F7F1E6" stroke="#A9855F" stroke-width="7"/>
+    <circle cx="1155" cy="410" r="26" fill="#D9A441" opacity=".85"/>
+  </g>
+
+  <!-- pendant lights -->
+  <g stroke="#8E867C" stroke-width="5" fill="none">
+    <path d="M420 300 V400"/><path d="M980 300 V400"/>
+  </g>
+  <path d="M378 400 h84 l-20 52 h-44 z" fill="#E7B65C"/>
+  <path d="M938 400 h84 l-20 52 h-44 z" fill="#E7B65C"/>
+
+  <!-- rug -->
+  <ellipse cx="700" cy="890" rx="620" ry="110" fill="#DCC9AB" opacity=".7"/>
+  <ellipse cx="700" cy="890" rx="480" ry="78" fill="#EFE4D5" opacity=".55"/>
+
+  <!-- sectional sofa -->
+  <g>
+    <path d="M250 700 q0 -80 80 -80 h420 q80 0 80 80 v30 h-580 z" fill="url(#sofa)"/>
+    <rect x="250" y="726" width="580" height="140" rx="28" fill="#C9B9A2"/>
+    <rect x="290" y="646" width="180" height="96" rx="20" fill="#EFE7DA"/>
+    <rect x="488" y="646" width="180" height="96" rx="20" fill="#EFE7DA"/>
+    <rect x="686" y="646" width="120" height="96" rx="20" fill="#EFE7DA"/>
+    <rect x="830" y="660" width="240" height="180" rx="26" fill="#D2C3AC"/>
+    <rect x="852" y="694" width="196" height="120" rx="20" fill="#E7DCCB"/>
+    <rect x="326" y="662" width="72" height="72" rx="14" fill="#3D5B50" transform="rotate(-8 362 698)"/>
+    <rect x="660" y="664" width="70" height="70" rx="14" fill="#C2643C" transform="rotate(7 695 699)"/>
+    <rect x="236" y="856" width="24" height="52" rx="9" fill="#6F5238"/>
+    <rect x="1046" y="836" width="24" height="56" rx="9" fill="#6F5238"/>
+  </g>
+
+  <!-- coffee table -->
+  <g>
+    <ellipse cx="700" cy="800" rx="200" ry="46" fill="#A9855F"/>
+    <rect x="520" y="800" width="360" height="16" rx="8" fill="#8E6C4C"/>
+    <rect x="546" y="816" width="16" height="72" rx="7" fill="#6F5238"/>
+    <rect x="838" y="816" width="16" height="72" rx="7" fill="#6F5238"/>
+    <ellipse cx="700" y="800" rx="200" ry="46" fill="#BB9A74"/>
+    <rect x="636" y="756" width="90" height="34" rx="6" fill="#EFE4D5"/>
+    <rect x="740" y="748" width="72" height="42" rx="6" fill="#3D5B50"/>
+    <ellipse cx="612" cy="792" rx="28" ry="13" fill="#D9A441"/>
+    <path d="M770 742 q-20 -3 -20 -26 q0 -23 20 -23 q20 0 20 23 q0 23 -20 26 z" fill="#6E8C7B"/>
+  </g>
+
+  <!-- plant -->
+  <g>
+    <path d="M1300 900 q-14 -110 16 -170" stroke="#4F6B58" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <path d="M1306 786 q-64 -44 -96 -8 q48 44 96 8" fill="#6E8C7B"/>
+    <path d="M1310 836 q70 -48 106 -4 q-54 46 -106 4" fill="#7E9A88"/>
+    <path d="M1262 888 h104 l-14 88 h-76 z" fill="#B5714C"/>
+    <rect x="1254" y="878" width="120" height="18" rx="8" fill="#C98B62"/>
+  </g>
+</svg>

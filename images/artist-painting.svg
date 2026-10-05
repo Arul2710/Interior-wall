@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img" aria-label="Mural artist on a step ladder rolling a large hand-painted mural onto a wall">
+  <title>Mural artist painting a wall mural</title>
+  <defs>
+    <linearGradient id="pw" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6F0E5"/>
+      <stop offset="1" stop-color="#E7DCCC"/>
+    </linearGradient>
+    <linearGradient id="pfl" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C6A585"/>
+      <stop offset="1" stop-color="#A98866"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E0B18C"/>
+      <stop offset="1" stop-color="#C68F68"/>
+    </linearGradient>
+    <clipPath id="art">
+      <rect x="120" y="150" width="720" height="880"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1200" height="1500" fill="url(#pw)"/>
+  <rect y="1180" width="1200" height="320" fill="url(#pfl)"/>
+
+  <!-- pencil grid on unfinished wall -->
+  <g stroke="#CBB49A" stroke-width="2" opacity=".85">
+    <path d="M120 370 H840 M120 590 H840 M120 810 H840"/>
+    <path d="M300 150 V1030 M480 150 V1030 M660 150 V1030"/>
+  </g>
+
+  <!-- finished painted portion (left) -->
+  <g clip-path="url(#art)">
+    <rect x="120" y="150" width="420" height="880" fill="#3D5B50"/>
+    <circle cx="300" cy="330" r="130" fill="#E7B65C" opacity=".85"/>
+    <path d="M120 780 Q300 660 540 760 L540 1030 L120 1030 Z" fill="#5E7D6C"/>
+    <path d="M120 880 Q320 790 540 866 L540 1030 L120 1030 Z" fill="#33513F"/>
+    <g fill="#EBDCC4" opacity=".9">
+      <ellipse cx="220" cy="600" rx="34" ry="15" transform="rotate(-30 220 600)"/>
+      <ellipse cx="300" cy="546" rx="34" ry="15" transform="rotate(26 300 546)"/>
+      <ellipse cx="234" cy="482" rx="28" ry="13" transform="rotate(-28 234 482)"/>
+    </g>
+    <circle cx="380" cy="440" r="24" fill="#D2683F"/><circle cx="380" cy="440" r="10" fill="#F2D79B"/>
+    <circle cx="180" cy="700" r="18" fill="#D2683F"/><circle cx="180" cy="700" r="7" fill="#F2D79B"/>
+  </g>
+  <!-- freshly rolled edge -->
+  <rect x="536" y="150" width="10" height="880" fill="#2C4536" opacity=".5"/>
+  <rect x="546" y="150" width="6" height="880" fill="#F2E7D6" opacity=".8"/>
+
+  <!-- sketch outline on unfinished side -->
+  <g fill="none" stroke="#A08C74" stroke-width="5" stroke-linecap="round" opacity=".9">
+    <path d="M660 900 q60 -140 120 -220"/>
+    <path d="M780 680 q56 -46 104 -6"/>
+    <circle cx="700" cy="300" r="86"/>
+  </g>
+
+  <!-- drop cloth -->
+  <path d="M60 1180 q120 -46 250 -12 q150 40 300 6 q170 -40 330 6 q120 34 200 0 v320 H60 Z" fill="#EDE3D3"/>
+  <path d="M60 1180 q120 -46 250 -12 q150 40 300 6 q170 -40 330 6 q120 34 200 0" fill="none" stroke="#D8C7AF" stroke-width="6"/>
+
+  <!-- ladder -->
+  <g>
+    <path d="M700 1180 L640 300 M860 1180 L800 300" stroke="#B98D2F" stroke-width="22" stroke-linecap="round"/>
+    <g stroke="#A87C26" stroke-width="15" stroke-linecap="round">
+      <path d="M654 460 H812"/><path d="M646 640 H822"/>
+      <path d="M638 820 H832"/><path d="M630 1000 H842"/><path d="M622 1140 H852"/>
+    </g>
+  </g>
+
+  <!-- artist figure -->
+  <g>
+    <!-- back leg -->
+    <path d="M792 800 q40 40 46 130 l6 210" stroke="#2F3B4A" stroke-width="52" stroke-linecap="round" fill="none"/>
+    <path d="M844 1140 q34 6 52 -10" stroke="#23282F" stroke-width="30" stroke-linecap="round" fill="none"/>
+    <!-- torso / overalls -->
+    <path d="M700 470 q100 -22 168 22 q26 74 8 176 q-16 96 -18 150 l-190 4 q-8 -140 -22 -214 q-14 -76 54 -138 z" fill="#3E5C74"/>
+    <path d="M700 470 q100 -22 168 22 q10 30 12 60 l-206 6 q4 -46 26 -88 z" fill="#4C6E8A"/>
+    <!-- head -->
+    <circle cx="792" cy="386" r="66" fill="url(#skin)"/>
+    <path d="M726 372 q10 -76 78 -74 q66 2 76 68 q-30 -30 -76 -30 q-48 0 -78 36 z" fill="#3A2E28"/>
+    <path d="M872 386 q22 6 16 34 q-6 26 -26 24 z" fill="#C68F68"/>
+    <!-- raised arm to roller -->
+    <path d="M712 520 q-64 -34 -84 -122" stroke="#3E5C74" stroke-width="46" stroke-linecap="round" fill="none"/>
+    <path d="M628 400 q-22 -46 -14 -96" stroke="url(#skin)" stroke-width="38" stroke-linecap="round" fill="none"/>
+    <!-- roller -->
+    <g transform="translate(596 258) rotate(-12)">
+      <rect x="-70" y="-16" width="140" height="34" rx="16" fill="#C2643C"/>
+      <rect x="-70" y="-16" width="140" height="12" rx="6" fill="#D97C52"/>
+      <rect x="-8" y="18" width="16" height="66" rx="6" fill="#B0AAA0"/>
+      <rect x="-16" y="80" width="32" height="20" rx="8" fill="#8E867C"/>
+    </g>
+    <!-- supporting arm -->
+    <path d="M866 522 q56 40 62 116" stroke="#3E5C74" stroke-width="44" stroke-linecap="round" fill="none"/>
+    <circle cx="928" cy="642" r="24" fill="url(#skin)"/>
+    <!-- front leg -->
+    <path d="M712 812 q-44 46 -52 138 l-8 190" stroke="#35506A" stroke-width="54" stroke-linecap="round" fill="none"/>
+    <path d="M652 1140 q-34 6 -50 -12" stroke="#23282F" stroke-width="30" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- paint tray + cans -->
+  <g>
+    <rect x="196" y="1256" width="230" height="26" rx="10" fill="#B0AAA0"/>
+    <rect x="216" y="1226" width="190" height="34" rx="8" fill="#CFC7BC"/>
+    <rect x="228" y="1234" width="82" height="18" rx="6" fill="#C2643C"/>
+    <rect x="316" y="1234" width="76" height="18" rx="6" fill="#3D5B50"/>
+    <circle cx="250" cy="1310" r="34" fill="#D9A441"/><rect x="244" y="1276" width="12" height="10" rx="4" fill="#B98D2F"/>
+    <circle cx="332" cy="1322" r="30" fill="#6E8C7B"/>
+    <circle cx="404" cy="1312" r="26" fill="#EFE4D5"/>
+  </g>
+
+  <!-- brush resting on tray -->
+  <g transform="translate(160 1210) rotate(-8)">
+    <rect x="0" y="0" width="150" height="12" rx="6" fill="#8E6C4C"/>
+    <rect x="146" y="-4" width="52" height="20" rx="8" fill="#C9BFB2"/>
+    <path d="M198 -6 q40 4 40 14 q0 10 -40 14 z" fill="#C2643C"/>
+  </g>
+</svg>

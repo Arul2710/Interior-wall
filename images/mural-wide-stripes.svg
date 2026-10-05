@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" width="1400" height="900" role="img" aria-label="Wide hand-painted striped mural with organic colour bands and a botanical accent">
+  <title>Wide striped mural</title>
+  <defs>
+    <linearGradient id="ws" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EFE6D6"/>
+      <stop offset="1" stop-color="#E0D0B6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="900" fill="url(#ws)"/>
+
+  <g>
+    <rect x="0" y="0" width="1400" height="130" fill="#3D5B50"/>
+    <rect x="0" y="130" width="1400" height="90" fill="#6E8C7B"/>
+    <rect x="0" y="220" width="1400" height="150" fill="#C2643C"/>
+    <rect x="0" y="370" width="1400" height="80" fill="#E3B05C"/>
+    <rect x="0" y="450" width="1400" height="180" fill="#8FA898"/>
+    <rect x="0" y="630" width="1400" height="110" fill="#B98D2F"/>
+    <rect x="0" y="740" width="1400" height="160" fill="#2C463B"/>
+  </g>
+
+  <!-- wavy overlay to soften -->
+  <path d="M0 130 C260 90 420 200 700 130 C980 60 1160 190 1400 130 L1400 220 L0 220 Z" fill="#3D5B50" opacity=".35"/>
+  <path d="M0 450 C240 410 460 520 720 450 C980 380 1180 500 1400 450 L1400 630 L0 630 Z" fill="#8FA898" opacity=".4"/>
+
+  <!-- botanical accent -->
+  <g stroke="#EBDCC4" stroke-width="8" fill="none" stroke-linecap="round" opacity=".9">
+    <path d="M300 740 C320 620 340 540 358 470"/>
+    <path d="M1040 740 C1024 630 1006 560 990 500"/>
+  </g>
+  <g fill="#EBDCC4" opacity=".92">
+    <ellipse cx="266" cy="640" rx="52" ry="22" transform="rotate(-32 266 640)"/>
+    <ellipse cx="384" cy="580" rx="52" ry="22" transform="rotate(28 384 580)"/>
+    <ellipse cx="290" cy="510" rx="42" ry="18" transform="rotate(-30 290 510)"/>
+    <ellipse cx="1076" cy="650" rx="52" ry="22" transform="rotate(30 1076 650)"/>
+    <ellipse cx="960" cy="586" rx="52" ry="22" transform="rotate(-28 960 586)"/>
+    <ellipse cx="1052" cy="516" rx="42" ry="18" transform="rotate(30 1052 516)"/>
+  </g>
+  <g fill="#D2683F">
+    <circle cx="358" cy="450" r="34"/><circle cx="358" cy="450" r="13" fill="#F6E3C0"/>
+    <circle cx="990" cy="482" r="30"/><circle cx="990" cy="482" r="12" fill="#F6E3C0"/>
+  </g>
+
+  <circle cx="700" cy="290" r="58" fill="#F6E3C0" opacity=".9"/>
+  <g fill="#3D5B50" opacity=".65">
+    <circle cx="200" cy="530" r="16"/><circle cx="1200" cy="540" r="14"/><circle cx="640" cy="60" r="12"/>
+  </g>
+  <g stroke="#F6E3C0" stroke-width="8" fill="none" stroke-linecap="round" opacity=".45">
+    <path d="M980 300 q50 50 100 0 q50 -50 100 0"/>
+  </g>
+</svg>

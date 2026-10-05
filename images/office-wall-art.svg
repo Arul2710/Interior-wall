@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000" width="1400" height="1000" role="img" aria-label="Office reception lobby with a large geometric brand mural, reception desk and lounge chairs">
+  <title>Office wall art reception mural</title>
+  <defs>
+    <linearGradient id="ow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F7F2EA"/>
+      <stop offset="1" stop-color="#E9E1D3"/>
+    </linearGradient>
+    <linearGradient id="of" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C7BBA8"/>
+      <stop offset="1" stop-color="#AFA28D"/>
+    </linearGradient>
+    <clipPath id="oclip"><rect x="170" y="110" width="1060" height="470"/></clipPath>
+  </defs>
+
+  <rect width="1400" height="1000" fill="url(#ow)"/>
+  <rect y="720" width="1400" height="280" fill="url(#of)"/>
+  <rect y="712" width="1400" height="12" fill="#948872" opacity=".4"/>
+
+  <!-- geometric brand mural -->
+  <rect x="170" y="110" width="1060" height="470" fill="#F3ECE0"/>
+  <g clip-path="url(#oclip)">
+    <g stroke="#3D5B50" stroke-width="2" opacity=".28">
+      <path d="M170 230 H1230 M170 350 H1230 M170 470 H1230"/>
+      <path d="M290 110 V580 M410 110 V580 M530 110 V580 M650 110 V580 M770 110 V580 M890 110 V580 M1010 110 V580 M1130 110 V580"/>
+    </g>
+    <path d="M170 470 L290 350 L410 470 L530 350 L650 470 L770 350 L890 470 L1010 350 L1130 470 L1230 380 L1230 580 L170 580 Z" fill="#3D5B50" opacity=".95"/>
+    <path d="M170 580 L170 520 L290 420 L410 520 L530 420 L650 520 L770 420 L890 520 L1010 420 L1130 520 L1230 440 L1230 580 Z" fill="#557A68" opacity=".85"/>
+    <circle cx="410" cy="230" r="86" fill="#C2643C"/>
+    <circle cx="410" cy="230" r="46" fill="#E3A76A" opacity=".9"/>
+    <rect x="770" y="150" width="120" height="120" rx="20" fill="#D9A441" transform="rotate(18 830 210)"/>
+    <rect x="960" y="160" width="110" height="110" rx="20" fill="#EBDCC4" transform="rotate(-14 1015 215)"/>
+    <g fill="none" stroke="#C2643C" stroke-width="9" stroke-linecap="round" opacity=".9">
+      <path d="M560 200 q60 60 120 0"/>
+      <path d="M1100 300 q50 50 100 0"/>
+    </g>
+    <g fill="#EBDCC4" opacity=".8">
+      <circle cx="230" cy="180" r="12"/><circle cx="700" cy="180" r="10"/><circle cx="1190" cy="200" r="12"/>
+    </g>
+  </g>
+  <rect x="170" y="110" width="1060" height="470" fill="none" stroke="#E9E1D3" stroke-width="14"/>
+
+  <!-- reception desk -->
+  <g>
+    <rect x="420" y="612" width="580" height="140" rx="18" fill="#3D5B50"/>
+    <rect x="420" y="612" width="580" height="26" rx="13" fill="#4F6B58"/>
+    <rect x="440" y="652" width="540" height="6" fill="#2C463B" opacity=".6"/>
+    <rect x="440" y="676" width="540" height="6" fill="#2C463B" opacity=".4"/>
+    <rect x="470" y="592" width="180" height="24" rx="8" fill="#EFE4D5"/>
+    <rect x="700" y="580" width="120" height="36" rx="8" fill="#C2643C"/>
+    <path d="M1120 752 h70 v-70 h-70 z" fill="#C2643C" opacity=".85"/>
+  </g>
+  <!-- monitor -->
+  <g>
+    <rect x="880" y="530" width="200" height="130" rx="10" fill="#2E2A26"/>
+    <rect x="892" y="542" width="176" height="106" rx="6" fill="#4F6B58"/>
+    <path d="M906 620 l40 -46 l30 28 l24 -20 l44 38 z" fill="#8FA898" opacity=".9"/>
+    <rect x="962" y="660" width="36" height="14" fill="#3A322B"/>
+    <rect x="930" y="672" width="100" height="12" rx="6" fill="#3A322B"/>
+  </g>
+
+  <!-- pendant lights -->
+  <g stroke="#8E867C" stroke-width="5" fill="none">
+    <path d="M300 0 V140"/><path d="M1100 0 V140"/>
+  </g>
+  <path d="M252 140 h96 l-24 62 h-48 z" fill="#E7B65C"/>
+  <path d="M1052 140 h96 l-24 62 h-48 z" fill="#E7B65C"/>
+  <circle cx="300" cy="214" r="10" fill="#FBF1DC" opacity=".9"/>
+  <circle cx="1100" cy="214" r="10" fill="#FBF1DC" opacity=".9"/>
+
+  <!-- lounge chairs -->
+  <g>
+    <path d="M120 800 q0 -140 52 -176 q58 44 58 176 z" fill="#C2643C"/>
+    <rect x="108" y="788" width="130" height="36" rx="16" fill="#A04E2C"/>
+    <path d="M120 822 l-12 74 M226 822 l12 74" stroke="#4A423A" stroke-width="12" stroke-linecap="round"/>
+    <path d="M1140 800 q0 -140 52 -176 q58 44 58 176 z" fill="#3D5B50"/>
+    <rect x="1128" y="788" width="130" height="36" rx="16" fill="#2C463B"/>
+    <path d="M1140 822 l-12 74 M1246 822 l12 74" stroke="#4A423A" stroke-width="12" stroke-linecap="round"/>
+  </g>
+
+  <!-- side table -->
+  <g>
+    <ellipse cx="320" cy="846" rx="66" ry="18" fill="#8E6C4C"/>
+    <rect x="313" y="846" width="14" height="66" rx="6" fill="#6F5238"/>
+    <ellipse cx="320" cy="914" rx="34" ry="10" fill="#6F5238"/>
+    <path d="M300 812 q-16 -40 20 -46 q36 -6 30 34 q-4 24 -26 24 q-20 0 -24 -12 z" fill="#6E8C7B"/>
+    <rect x="250" y="820" width="44" height="26" rx="5" fill="#EFE4D5"/>
+  </g>
+
+  <!-- plants -->
+  <g>
+    <path d="M1330 800 q-14 -110 16 -172" stroke="#4F6B58" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <path d="M1336 686 q-64 -44 -96 -8 q48 44 96 8" fill="#6E8C7B"/>
+    <path d="M1340 736 q70 -48 106 -4 q-54 46 -106 4" fill="#7E9A88"/>
+    <path d="M1292 788 h104 l-14 88 h-76 z" fill="#B5714C"/>
+    <rect x="1284" y="778" width="120" height="18" rx="8" fill="#C98B62"/>
+  </g>
+
+  <!-- rug -->
+  <ellipse cx="700" cy="920" rx="560" ry="80" fill="#DCD0BB" opacity=".7"/>
+</svg>

@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000" width="1400" height="1000" role="img" aria-label="Children's bedroom with a hand-painted forest and mountain mural, bed, toy shelf and bunting">
+  <title>Kids room with a forest and mountain mural</title>
+  <defs>
+    <linearGradient id="kw" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBF6EE"/>
+      <stop offset="1" stop-color="#EFE5D6"/>
+    </linearGradient>
+    <linearGradient id="kf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D9BC97"/>
+      <stop offset="1" stop-color="#BE9C74"/>
+    </linearGradient>
+    <linearGradient id="ksky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#BFD6DE"/>
+      <stop offset="1" stop-color="#E7EFE9"/>
+    </linearGradient>
+    <clipPath id="kclip"><rect x="120" y="120" width="1160" height="560"/></clipPath>
+  </defs>
+
+  <rect width="1400" height="1000" fill="url(#kw)"/>
+  <rect y="680" width="1400" height="320" fill="url(#kf)"/>
+  <rect y="672" width="1400" height="12" fill="#A9855F" opacity=".4"/>
+
+  <!-- mural band -->
+  <rect x="120" y="120" width="1160" height="560" fill="url(#ksky)"/>
+  <g clip-path="url(#kclip)">
+    <circle cx="1090" cy="230" r="70" fill="#F3D89B"/>
+    <!-- mountains -->
+    <path d="M80 560 L360 260 L560 470 L700 330 L1000 560 Z" fill="#8FA8B4"/>
+    <path d="M100 560 L370 300 L560 500 L710 372 L1000 560 Z" fill="#6E8B99"/>
+    <path d="M330 340 L370 372 L330 404 L292 372 Z" fill="#F4F7F6"/>
+    <path d="M680 404 L710 430 L680 456 L650 430 Z" fill="#F4F7F6"/>
+    <!-- pine forest -->
+    <g fill="#3D5B50">
+      <path d="M180 680 L180 470 l-56 96 h34 l-64 106 h172 l-64 -106 h34 z"/>
+      <path d="M300 680 L300 440 l-64 108 h40 l-74 120 h196 l-74 -120 h40 z"/>
+      <path d="M1120 680 L1120 460 l-58 100 h36 l-68 110 h180 l-68 -110 h36 z"/>
+      <path d="M1230 680 L1230 486 l-50 86 h32 l-60 98 h156 l-60 -98 h32 z"/>
+    </g>
+    <g fill="#4F6B58" opacity=".9">
+      <path d="M420 680 L420 520 l-42 72 h26 l-50 82 h132 l-50 -82 h26 z"/>
+      <path d="M980 680 L980 520 l-42 72 h26 l-50 82 h132 l-50 -82 h26 z"/>
+    </g>
+    <!-- deer -->
+    <g fill="#C98B62">
+      <ellipse cx="640" cy="596" rx="52" ry="34"/>
+      <circle cx="592" cy="556" r="26"/>
+      <path d="M576 534 q-6 -34 14 -46 M590 530 q10 -30 30 -34" stroke="#C98B62" stroke-width="7" fill="none" stroke-linecap="round"/>
+      <rect x="606" y="620" width="11" height="46" rx="5"/>
+      <rect x="656" y="620" width="11" height="46" rx="5"/>
+    </g>
+    <!-- birds -->
+    <g stroke="#3F4A52" stroke-width="6" fill="none" stroke-linecap="round" opacity=".75">
+      <path d="M300 200 q22 -18 44 0 q22 -18 44 0"/>
+      <path d="M430 160 q16 -13 32 0 q16 -13 32 0"/>
+      <path d="M840 210 q18 -15 36 0 q18 -15 36 0"/>
+    </g>
+    <g fill="#E2A06A" opacity=".9">
+      <circle cx="250" cy="300" r="7"/><circle cx="1050" cy="330" r="6"/><circle cx="540" cy="220" r="5"/>
+    </g>
+  </g>
+  <rect x="120" y="120" width="1160" height="560" fill="none" stroke="#EFE5D6" stroke-width="16"/>
+
+  <!-- bunting -->
+  <g>
+    <path d="M60 60 Q700 130 1340 60" fill="none" stroke="#C9B79B" stroke-width="4"/>
+    <g fill="#C2643C"><path d="M200 92 l34 8 l-16 40 z"/><path d="M520 116 l34 6 l-18 42 z"/><path d="M1000 96 l34 8 l-16 40 z"/></g>
+    <g fill="#D9A441"><path d="M360 108 l34 6 l-18 42 z"/><path d="M860 116 l34 6 l-18 42 z"/><path d="M1180 88 l34 8 l-16 40 z"/></g>
+    <g fill="#3D5B50"><path d="M680 120 l34 4 l-18 44 z"/></g>
+  </g>
+
+  <!-- rug -->
+  <ellipse cx="700" cy="880" rx="560" ry="104" fill="#E6D2B4"/>
+  <ellipse cx="700" cy="880" rx="430" ry="72" fill="#D9A441" opacity=".35"/>
+
+  <!-- bed -->
+  <g>
+    <rect x="380" y="600" width="520" height="34" rx="12" fill="#8E6C4C"/>
+    <rect x="380" y="628" width="520" height="120" rx="14" fill="#EFE4D5"/>
+    <rect x="396" y="560" width="488" height="76" rx="24" fill="#F7F1E6"/>
+    <rect x="410" y="576" width="200" height="52" rx="18" fill="#FFFFFF"/>
+    <rect x="626" y="576" width="200" height="52" rx="18" fill="#FFFFFF"/>
+    <rect x="368" y="740" width="26" height="86" rx="10" fill="#6F5238"/>
+    <rect x="886" y="740" width="26" height="86" rx="10" fill="#6F5238"/>
+    <rect x="368" y="500" width="34" height="150" rx="14" fill="#A9855F"/>
+    <rect x="878" y="500" width="34" height="150" rx="14" fill="#A9855F"/>
+    <rect x="368" y="486" width="544" height="26" rx="12" fill="#8E6C4C"/>
+    <rect x="600" y="656" width="80" height="46" rx="16" fill="#C2643C"/>
+  </g>
+
+  <!-- toy shelf right -->
+  <g>
+    <rect x="1020" y="520" width="270" height="16" rx="8" fill="#A9855F"/>
+    <rect x="1020" y="620" width="270" height="16" rx="8" fill="#A9855F"/>
+    <rect x="1032" y="380" width="52" height="140" rx="8" fill="#C2643C"/>
+    <rect x="1094" y="404" width="44" height="116" rx="8" fill="#3D5B50"/>
+    <rect x="1148" y="424" width="60" height="96" rx="8" fill="#D9A441"/>
+    <circle cx="1244" cy="500" r="26" fill="#6E8C7B"/>
+    <rect x="1060" y="576" width="120" height="44" rx="10" fill="#E2A06A"/>
+    <rect x="1196" y="586" width="70" height="34" rx="10" fill="#8FA898"/>
+    <circle cx="1100" cy="662" r="24" fill="#C2643C"/>
+    <rect x="1140" y="646" width="100" height="34" rx="12" fill="#3D5B50"/>
+  </g>
+
+  <!-- floor cushions + blocks -->
+  <g>
+    <ellipse cx="230" cy="820" rx="96" ry="40" fill="#C2643C"/>
+    <ellipse cx="230" cy="806" rx="96" ry="40" fill="#D97C52"/>
+    <ellipse cx="1180" cy="880" rx="86" ry="36" fill="#3D5B50"/>
+    <rect x="286" y="700" width="60" height="60" rx="10" fill="#D9A441"/>
+    <rect x="300" y="640" width="60" height="60" rx="10" fill="#6E8C7B"/>
+  </g>
+
+  <!-- cloud mobile -->
+  <g stroke="#C9B79B" stroke-width="3" fill="none">
+    <path d="M700 130 V210"/><path d="M640 210 V250"/><path d="M760 210 V250"/>
+  </g>
+  <g fill="#FFFFFF" opacity=".95">
+    <ellipse cx="700" cy="228" rx="52" ry="26"/>
+    <circle cx="640" cy="278" r="22"/><circle cx="760" cy="278" r="22"/>
+  </g>
+  <path d="M628 300 l24 8 l-12 30 z" fill="#D9A441"/>
+  <path d="M748 300 l24 8 l-12 30 z" fill="#C2643C"/>
+</svg>

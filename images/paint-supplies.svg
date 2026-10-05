@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" width="1400" height="900" role="img" aria-label="Overhead flat lay of mural artist brushes, paint pots and a colour palette">
+  <title>Artist brushes, paint pots and palette</title>
+  <defs>
+    <linearGradient id="tw" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EFE3D0"/>
+      <stop offset="1" stop-color="#DCC9AC"/>
+    </linearGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C08F5E"/>
+      <stop offset="1" stop-color="#9C6E44"/>
+    </linearGradient>
+    <radialGradient id="sh" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#6B5238" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#6B5238" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1400" height="900" fill="url(#tw)"/>
+  <ellipse cx="700" cy="480" rx="640" ry="400" fill="url(#sh)" opacity=".5"/>
+
+  <!-- paint brush 1 -->
+  <g transform="translate(140 640) rotate(-14)">
+    <rect x="0" y="-14" width="330" height="28" rx="10" fill="url(#wood)"/>
+    <rect x="322" y="-20" width="70" height="40" rx="12" fill="#C9BFB2"/>
+    <path d="M390 -26 q120 6 120 26 q0 20 -120 26 z" fill="#C2643C"/>
+    <path d="M470 -18 q60 4 60 18 q0 14 -60 18 z" fill="#A94E2C"/>
+  </g>
+  <!-- paint brush 2 -->
+  <g transform="translate(200 740) rotate(6)">
+    <rect x="0" y="-12" width="280" height="24" rx="9" fill="#8E6C4C"/>
+    <rect x="272" y="-17" width="60" height="34" rx="10" fill="#B9AEA1"/>
+    <path d="M330 -21 q100 5 100 21 q0 16 -100 21 z" fill="#3D5B50"/>
+  </g>
+  <!-- paint brush 3 -->
+  <g transform="translate(150 540) rotate(-4)">
+    <rect x="0" y="-10" width="240" height="20" rx="8" fill="#6F5238"/>
+    <rect x="232" y="-15" width="52" height="30" rx="9" fill="#C9BFB2"/>
+    <path d="M282 -18 q86 4 86 18 q0 14 -86 18 z" fill="#D9A441"/>
+  </g>
+
+  <!-- palette -->
+  <g transform="translate(760 470)">
+    <ellipse cx="0" cy="0" rx="240" ry="170" fill="#E8DCC6"/>
+    <ellipse cx="0" cy="0" rx="240" ry="170" fill="none" stroke="#CBBBA0" stroke-width="6"/>
+    <ellipse cx="176" cy="-16" rx="34" ry="26" fill="#EFE3D0"/>
+    <g>
+      <ellipse cx="-120" cy="-70" rx="34" ry="26" fill="#C2643C"/>
+      <ellipse cx="-24" cy="-92" rx="34" ry="26" fill="#D9A441"/>
+      <ellipse cx="72" cy="-84" rx="34" ry="26" fill="#3D5B50"/>
+      <ellipse cx="-146" cy="14" rx="34" ry="26" fill="#6E8C7B"/>
+      <ellipse cx="-46" cy="0" rx="34" ry="26" fill="#E3B05C"/>
+      <ellipse cx="52" cy="6" rx="34" ry="26" fill="#C98B7E"/>
+      <ellipse cx="-108" cy="88" rx="34" ry="26" fill="#8C6E52"/>
+      <ellipse cx="-8" cy="82" rx="34" ry="26" fill="#D98B4E"/>
+      <ellipse cx="88" cy="76" rx="34" ry="26" fill="#5E7D6C"/>
+    </g>
+    <g opacity=".5" fill="#C4A583">
+      <ellipse cx="-60" cy="-40" rx="44" ry="22" transform="rotate(-20 -60 -40)"/>
+      <ellipse cx="10" cy="48" rx="40" ry="20" transform="rotate(14 10 48)"/>
+    </g>
+  </g>
+
+  <!-- paint pots -->
+  <g>
+    <g transform="translate(1090 210)">
+      <rect x="0" y="40" width="120" height="130" rx="14" fill="#C2643C"/>
+      <rect x="-6" y="18" width="132" height="34" rx="12" fill="#D97C52"/>
+      <rect x="18" y="96" width="84" height="46" rx="8" fill="#EFE3D0" opacity=".9"/>
+      <rect x="34" y="112" width="52" height="8" rx="4" fill="#B99C7E"/>
+    </g>
+    <g transform="translate(1230 250)">
+      <rect x="0" y="40" width="110" height="120" rx="14" fill="#3D5B50"/>
+      <rect x="-6" y="20" width="122" height="32" rx="11" fill="#4F6B58"/>
+      <rect x="16" y="90" width="78" height="42" rx="8" fill="#EFE3D0" opacity=".9"/>
+    </g>
+    <g transform="translate(1060 420)">
+      <rect x="0" y="34" width="100" height="106" rx="12" fill="#D9A441"/>
+      <rect x="-6" y="16" width="112" height="30" rx="10" fill="#E3B05C"/>
+    </g>
+    <g transform="translate(1176 460)">
+      <rect x="0" y="30" width="96" height="100" rx="12" fill="#6E8C7B"/>
+      <rect x="-6" y="14" width="108" height="28" rx="10" fill="#7E9A88"/>
+    </g>
+  </g>
+
+  <!-- pencil + sketch paper -->
+  <g transform="translate(520 120) rotate(6)">
+    <rect x="0" y="0" width="360" height="250" rx="10" fill="#F7F1E6" stroke="#D4C2A6" stroke-width="4"/>
+    <g stroke="#C9B79B" stroke-width="3">
+      <path d="M40 60 H320 M40 110 H320 M40 160 H320"/>
+      <path d="M120 30 V220 M200 30 V220"/>
+    </g>
+    <path d="M40 190 q60 -80 130 -30 q60 -50 150 10" fill="none" stroke="#3D5B50" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="170" cy="160" r="22" fill="none" stroke="#C2643C" stroke-width="6"/>
+  </g>
+  <g transform="translate(330 200) rotate(-24)">
+    <rect x="0" y="0" width="200" height="18" rx="6" fill="#D9A441"/>
+    <path d="M200 0 l34 9 l-34 9 z" fill="#E9DCC4"/>
+    <path d="M226 6 l8 3 l-8 3 z" fill="#3A322B"/>
+    <rect x="-16" y="0" width="18" height="18" rx="4" fill="#C2643C"/>
+  </g>
+</svg>

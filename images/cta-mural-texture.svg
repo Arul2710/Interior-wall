@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="Abstract painted mural texture in terracotta, sage and ochre used as a call-to-action backdrop">
+  <title>Abstract mural texture</title>
+  <defs>
+    <linearGradient id="c1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8C4A32"/>
+      <stop offset=".5" stop-color="#A9663C"/>
+      <stop offset="1" stop-color="#6B5340"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#c1)"/>
+
+  <path d="M-60 240 C200 120 420 340 720 240 C1020 140 1240 340 1660 220 L1660 460 C1240 580 1020 380 720 480 C420 580 200 360 -60 480 Z" fill="#3D5B50" opacity=".85"/>
+  <path d="M-60 480 C200 360 420 580 720 480 C1020 380 1240 580 1660 460 L1660 700 C1240 820 1020 620 720 720 C420 820 200 600 -60 720 Z" fill="#B98D2F" opacity=".7"/>
+  <path d="M-60 700 C200 580 420 800 720 700 C1020 600 1240 800 1660 680 L1660 900 L-60 900 Z" fill="#2C463B" opacity=".75"/>
+
+  <circle cx="360" cy="240" r="150" fill="#E7B65C" opacity=".55"/>
+  <circle cx="360" cy="240" r="80" fill="#F3D89B" opacity=".5"/>
+  <circle cx="1240" cy="200" r="100" fill="#C2643C" opacity=".6"/>
+  <circle cx="820" cy="760" r="130" fill="#8FA898" opacity=".4"/>
+
+  <g stroke="#F6E3C0" stroke-width="10" fill="none" stroke-linecap="round" opacity=".3">
+    <path d="M180 640 q80 80 160 0 q80 -80 160 0"/>
+    <path d="M1080 640 q80 80 160 0 q80 -80 160 0"/>
+    <path d="M660 120 q60 60 120 0 q60 -60 120 0"/>
+  </g>
+  <g fill="#F6E3C0" opacity=".28">
+    <circle cx="620" cy="420" r="14"/><circle cx="1080" cy="380" r="12"/><circle cx="1480" cy="560" r="16"/>
+    <circle cx="180" cy="380" r="12"/><circle cx="900" cy="180" r="10"/>
+  </g>
+</svg>

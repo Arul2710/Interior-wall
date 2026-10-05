@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" width="1400" height="900" role="img" aria-label="Close-up of hand-troweled lime plaster wall texture in warm neutral tones">
+  <title>Textured lime plaster wall</title>
+  <defs>
+    <linearGradient id="pl" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EFE6D8"/>
+      <stop offset=".5" stop-color="#E3D7C4"/>
+      <stop offset="1" stop-color="#D6C7B0"/>
+    </linearGradient>
+    <radialGradient id="pglow" cx=".3" cy=".2" r=".9">
+      <stop offset="0" stop-color="#FFF6E6" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#FFF6E6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1400" height="900" fill="url(#pl)"/>
+  <rect width="1400" height="900" fill="url(#pglow)"/>
+
+  <!-- trowel sweeps -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M-40 180 C260 120 420 260 720 200 C980 148 1140 260 1440 210" stroke="#F6EEE1" stroke-width="70" opacity=".55"/>
+    <path d="M-40 420 C220 380 460 500 740 440 C1000 386 1180 470 1440 430" stroke="#CDBCA2" stroke-width="54" opacity=".4"/>
+    <path d="M-40 660 C280 620 440 740 760 680 C1020 632 1200 720 1440 676" stroke="#F1E7D7" stroke-width="62" opacity=".5"/>
+    <path d="M-40 830 C260 800 520 860 820 826 C1080 796 1240 840 1440 820" stroke="#CBB99E" stroke-width="40" opacity=".35"/>
+  </g>
+
+  <!-- patch marks -->
+  <g fill="#C9B79B" opacity=".22">
+    <ellipse cx="300" cy="300" rx="180" ry="60" transform="rotate(-8 300 300)"/>
+    <ellipse cx="900" cy="360" rx="220" ry="70" transform="rotate(6 900 360)"/>
+    <ellipse cx="600" cy="620" rx="260" ry="80" transform="rotate(-4 600 620)"/>
+    <ellipse cx="1150" cy="700" rx="180" ry="56" transform="rotate(8 1150 700)"/>
+  </g>
+  <g fill="#FBF5EA" opacity=".4">
+    <ellipse cx="500" cy="200" rx="200" ry="52" transform="rotate(5 500 200)"/>
+    <ellipse cx="820" cy="820" rx="240" ry="64" transform="rotate(-6 820 820)"/>
+  </g>
+
+  <!-- speckle -->
+  <g fill="#A9917A" opacity=".25">
+    <circle cx="180" cy="120" r="6"/><circle cx="420" cy="480" r="5"/><circle cx="700" cy="90" r="7"/>
+    <circle cx="980" cy="520" r="5"/><circle cx="1240" cy="200" r="6"/><circle cx="260" cy="800" r="7"/>
+    <circle cx="640" cy="380" r="5"/><circle cx="1080" cy="120" r="6"/><circle cx="1340" cy="600" r="5"/>
+  </g>
+</svg>

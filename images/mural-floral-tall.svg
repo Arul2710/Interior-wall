@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1400" width="1000" height="1400" role="img" aria-label="Tall hand-painted floral mural panel with cascading blossoms on a soft blush ground">
+  <title>Tall cascading floral mural panel</title>
+  <defs>
+    <linearGradient id="f1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F4E3E0"/>
+      <stop offset="1" stop-color="#E7CFC9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1400" fill="url(#f1)"/>
+
+  <g stroke="#7E9A88" stroke-width="9" fill="none" stroke-linecap="round" opacity=".9">
+    <path d="M300 1400 C320 1140 340 940 360 760 C372 640 380 540 386 460"/>
+    <path d="M700 1400 C682 1160 660 960 640 800 C628 700 620 610 614 520"/>
+    <path d="M500 1400 C508 1200 516 1060 522 940"/>
+  </g>
+  <g fill="#8FA898" opacity=".95">
+    <ellipse cx="258" cy="1250" rx="74" ry="32" transform="rotate(-32 258 1250)"/>
+    <ellipse cx="416" cy="1170" rx="74" ry="32" transform="rotate(28 416 1170)"/>
+    <ellipse cx="278" cy="1050" rx="62" ry="27" transform="rotate(-30 278 1050)"/>
+    <ellipse cx="438" cy="970" rx="62" ry="27" transform="rotate(26 438 970)"/>
+    <ellipse cx="302" cy="840" rx="54" ry="23" transform="rotate(-28 302 840)"/>
+    <ellipse cx="452" cy="760" rx="54" ry="23" transform="rotate(26 452 760)"/>
+    <ellipse cx="742" cy="1250" rx="74" ry="32" transform="rotate(30 742 1250)"/>
+    <ellipse cx="584" cy="1170" rx="74" ry="32" transform="rotate(-28 584 1170)"/>
+    <ellipse cx="722" cy="1050" rx="62" ry="27" transform="rotate(30 722 1050)"/>
+    <ellipse cx="562" cy="970" rx="62" ry="27" transform="rotate(-26 562 970)"/>
+    <ellipse cx="698" cy="840" rx="54" ry="23" transform="rotate(28 698 840)"/>
+    <ellipse cx="548" cy="760" rx="54" ry="23" transform="rotate(-26 548 760)"/>
+    <ellipse cx="470" cy="1180" rx="64" ry="28" transform="rotate(-26 470 1180)"/>
+    <ellipse cx="556" cy="1090" rx="64" ry="28" transform="rotate(24 556 1090)"/>
+    <ellipse cx="480" cy="990" rx="56" ry="24" transform="rotate(-24 480 990)"/>
+    <ellipse cx="564" cy="900" rx="56" ry="24" transform="rotate(22 564 900)"/>
+  </g>
+  <g fill="#D2683F">
+    <circle cx="386" cy="410" r="66"/><circle cx="386" cy="410" r="26" fill="#F9EDD4"/>
+    <circle cx="614" cy="470" r="58"/><circle cx="614" cy="470" r="23" fill="#F9EDD4"/>
+    <circle cx="522" cy="900" r="46"/><circle cx="522" cy="900" r="18" fill="#F9EDD4"/>
+    <circle cx="130" cy="900" r="38"/><circle cx="130" cy="900" r="15" fill="#F9EDD4"/>
+    <circle cx="880" cy="1000" r="42"/><circle cx="880" cy="1000" r="16" fill="#F9EDD4"/>
+    <circle cx="700" cy="1330" r="34"/><circle cx="700" cy="1330" r="13" fill="#F9EDD4"/>
+  </g>
+  <g fill="#E3B05C" opacity=".9">
+    <circle cx="180" cy="560" r="28"/><circle cx="840" cy="380" r="24"/>
+    <circle cx="600" cy="1330" r="26"/><circle cx="120" cy="1150" r="22"/><circle cx="880" cy="700" r="20"/>
+  </g>
+  <g fill="#C98B7E" opacity=".85">
+    <circle cx="440" cy="600" r="20"/><circle cx="700" cy="740" r="18"/><circle cx="300" cy="1330" r="22"/>
+  </g>
+  <g fill="#6E8C7B" opacity=".45">
+    <circle cx="150" cy="700" r="12"/><circle cx="860" cy="560" r="10"/><circle cx="560" cy="200" r="9"/>
+  </g>
+  <rect width="1000" height="1400" fill="none" stroke="#DCC4BC" stroke-width="8"/>
+</svg>

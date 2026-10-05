@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" width="1000" height="1250" role="img" aria-label="Whimsical jungle mural panel for a children's room with leaves, a toucan and a moon">
+  <title>Whimsical jungle mural panel</title>
+  <defs>
+    <linearGradient id="j1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2F4A63"/>
+      <stop offset="1" stop-color="#3F6B57"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1250" fill="url(#j1)"/>
+
+  <circle cx="740" cy="250" r="120" fill="#F3E7C6"/>
+  <circle cx="778" cy="230" r="112" fill="#33566F"/>
+
+  <g fill="#F6E3C0">
+    <circle cx="140" cy="140" r="8"/><circle cx="280" cy="200" r="6"/><circle cx="420" cy="110" r="7"/>
+    <circle cx="880" cy="480" r="7"/><circle cx="120" cy="520" r="6"/><circle cx="560" cy="360" r="6"/>
+    <circle cx="820" cy="700" r="7"/><circle cx="200" cy="820" r="6"/>
+  </g>
+
+  <!-- big leaves -->
+  <g fill="#4F8A6A" opacity=".95">
+    <path d="M120 1250 q-40 -260 60 -420 q110 180 40 420 z"/>
+    <path d="M880 1250 q40 -260 -60 -420 q-110 180 -40 420 z"/>
+    <path d="M320 1250 q-30 -200 50 -320 q86 140 30 320 z"/>
+    <path d="M690 1250 q30 -200 -50 -320 q-86 140 -30 320 z"/>
+  </g>
+  <g fill="#6BA98A" opacity=".9">
+    <path d="M170 780 q-90 -70 -150 -20 q80 70 150 20 z"/>
+    <path d="M840 700 q90 -70 150 -20 q-80 70 -150 20 z"/>
+    <path d="M360 900 q-80 -60 -130 -16 q70 60 130 16 z"/>
+    <path d="M650 860 q80 -60 130 -16 q-70 60 -130 16 z"/>
+  </g>
+  <g stroke="#EBDCC4" stroke-width="9" fill="none" stroke-linecap="round" opacity=".85">
+    <path d="M150 1250 q-10 -300 40 -420"/>
+    <path d="M850 1250 q10 -300 -40 -420"/>
+  </g>
+
+  <!-- toucan -->
+  <g transform="translate(500 560)">
+    <ellipse cx="0" cy="0" rx="86" ry="76" fill="#2C3E50"/>
+    <circle cx="-70" cy="-34" r="44" fill="#2C3E50"/>
+    <path d="M-108 -46 q-90 -6 -110 40 q80 26 110 -40 z" fill="#E7B65C"/>
+    <path d="M-214 -22 q-30 20 -18 46 q40 -6 46 -34 z" fill="#C2643C"/>
+    <circle cx="-78" cy="-42" r="10" fill="#F6E3C0"/>
+    <circle cx="-80" cy="-42" r="5" fill="#2C3E50"/>
+    <path d="M86 -6 q56 -18 46 -60 q-40 8 -46 60 z" fill="#3F6B57"/>
+    <rect x="-40" y="70" width="18" height="46" rx="8" fill="#E7B65C"/>
+    <rect x="24" y="70" width="18" height="46" rx="8" fill="#E7B65C"/>
+    <path d="M-20 -66 q40 -22 76 4 q-40 22 -76 -4 z" fill="#6BA98A"/>
+  </g>
+
+  <!-- hanging vines -->
+  <g stroke="#6BA98A" stroke-width="8" fill="none" stroke-linecap="round">
+    <path d="M420 0 q20 140 -10 260"/>
+    <path d="M600 0 q-20 120 10 220"/>
+  </g>
+  <g fill="#8FC0A4">
+    <ellipse cx="404" cy="150" rx="34" ry="15" transform="rotate(-30 404 150)"/>
+    <ellipse cx="446" cy="210" rx="30" ry="13" transform="rotate(26 446 210)"/>
+    <ellipse cx="596" cy="120" rx="30" ry="13" transform="rotate(28 596 120)"/>
+    <ellipse cx="614" cy="180" rx="26" ry="11" transform="rotate(-26 614 180)"/>
+  </g>
+  <g fill="#C98B7E" opacity=".9">
+    <circle cx="404" cy="266" r="16"/><circle cx="614" cy="226" r="14"/>
+  </g>
+</svg>

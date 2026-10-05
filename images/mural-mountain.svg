@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" width="1000" height="1250" role="img" aria-label="Layered mountain landscape mural panel with a rising sun, pine trees and a lake">
+  <title>Mountain landscape mural panel</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E8A96A"/>
+      <stop offset=".5" stop-color="#F0C489"/>
+      <stop offset="1" stop-color="#F7E0BC"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1250" fill="url(#sky)"/>
+  <circle cx="500" cy="520" r="180" fill="#F8E3B4"/>
+  <circle cx="500" cy="520" r="120" fill="#FBEFD2"/>
+
+  <g stroke="#F6E3C0" stroke-width="9" opacity=".5" stroke-linecap="round">
+    <path d="M500 120 V40"/><path d="M700 200 L770 130"/><path d="M300 200 L230 130"/>
+    <path d="M800 420 H900"/><path d="M200 420 H100"/>
+  </g>
+
+  <!-- mountains -->
+  <path d="M-40 900 L280 380 L520 760 L700 480 L1060 900 Z" fill="#7C6A78"/>
+  <path d="M-20 900 L290 430 L520 790 L710 540 L1060 900 Z" fill="#5E4F5C"/>
+  <path d="M244 452 L290 500 L244 546 L200 500 Z" fill="#F1E9DE"/>
+  <path d="M676 574 L710 616 L676 658 L642 616 Z" fill="#F1E9DE"/>
+  <path d="M-20 940 L300 620 L520 880 L740 700 L1060 940 Z" fill="#463C48" opacity=".7"/>
+
+  <!-- lake -->
+  <rect x="0" y="880" width="1000" height="150" fill="#8FA898"/>
+  <rect x="0" y="880" width="1000" height="12" fill="#FBEFD2" opacity=".6"/>
+  <g stroke="#FBEFD2" stroke-width="7" opacity=".55" stroke-linecap="round">
+    <path d="M140 930 H360"/><path d="M420 960 H640"/><path d="M700 930 H900"/>
+  </g>
+
+  <!-- pines -->
+  <g fill="#3D5B50">
+    <path d="M120 900 L120 700 l-56 96 h34 l-64 106 h172 l-64 -106 h34 z"/>
+    <path d="M250 900 L250 660 l-64 108 h40 l-74 120 h196 l-74 -120 h40 z"/>
+    <path d="M880 900 L880 690 l-58 100 h36 l-68 110 h180 l-68 -110 h36 z"/>
+  </g>
+  <g fill="#4F6B58" opacity=".92">
+    <path d="M370 900 L370 740 l-44 76 h28 l-52 84 h136 l-52 -84 h28 z"/>
+    <path d="M690 900 L690 740 l-44 76 h28 l-52 84 h136 l-52 -84 h28 z"/>
+  </g>
+
+  <!-- birds -->
+  <g stroke="#4A4038" stroke-width="9" fill="none" stroke-linecap="round" opacity=".75">
+    <path d="M180 260 q34 -28 68 0 q34 -28 68 0"/>
+    <path d="M340 190 q24 -20 48 0 q24 -20 48 0"/>
+    <path d="M640 250 q28 -24 56 0 q28 -24 56 0"/>
+  </g>
+
+  <!-- foreground band -->
+  <rect x="0" y="1150" width="1000" height="100" fill="#2C463B"/>
+  <g fill="#E3B05C" opacity=".9">
+    <circle cx="140" cy="1200" r="14"/><circle cx="520" cy="1210" r="18"/><circle cx="860" cy="1198" r="12"/>
+  </g>
+</svg>

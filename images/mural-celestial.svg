@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000" role="img" aria-label="Celestial hand-painted mural panel with a crescent moon, stars and constellations on a deep night blue ground">
+  <title>Celestial mural panel</title>
+  <defs>
+    <linearGradient id="n1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#28324E"/>
+      <stop offset="1" stop-color="#3E4A6E"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1000" fill="url(#n1)"/>
+
+  <!-- moon -->
+  <circle cx="620" cy="330" r="180" fill="#F3E7C6"/>
+  <circle cx="676" cy="300" r="170" fill="#33405F"/>
+  <g fill="#E7DDBE" opacity=".85">
+    <circle cx="560" cy="280" r="26"/><circle cx="600" cy="400" r="18"/><circle cx="660" cy="370" r="12"/>
+  </g>
+
+  <!-- stars -->
+  <g fill="#F6E3C0">
+    <circle cx="140" cy="140" r="8"/><circle cx="260" cy="240" r="6"/><circle cx="200" cy="420" r="7"/>
+    <circle cx="120" cy="620" r="6"/><circle cx="300" cy="700" r="8"/><circle cx="180" cy="860" r="6"/>
+    <circle cx="420" cy="120" r="7"/><circle cx="500" cy="220" r="5"/><circle cx="860" cy="180" r="8"/>
+    <circle cx="900" cy="560" r="6"/><circle cx="820" cy="760" r="7"/><circle cx="940" cy="880" r="6"/>
+    <circle cx="560" cy="880" r="7"/><circle cx="420" cy="940" r="6"/><circle cx="700" cy="700" r="5"/>
+    <circle cx="760" cy="480" r="6"/><circle cx="360" cy="520" r="5"/>
+  </g>
+  <g fill="#D9A441">
+    <path d="M420 320 l14 34 l36 3 l-28 24 l9 36 l-31 -20 l-31 20 l9 -36 l-28 -24 l36 -3 z"/>
+    <path d="M160 300 l10 24 l26 2 l-20 17 l7 26 l-23 -15 l-22 15 l6 -26 l-19 -17 l26 -2 z"/>
+    <path d="M860 640 l9 22 l24 2 l-18 16 l6 24 l-21 -14 l-21 14 l6 -24 l-18 -16 l24 -2 z"/>
+  </g>
+
+  <!-- constellations -->
+  <g stroke="#F6E3C0" stroke-width="3" opacity=".6" fill="none">
+    <path d="M140 620 L300 700 L420 940 L560 880"/>
+    <path d="M820 180 L900 560 L820 760"/>
+    <path d="M360 520 L420 320 L500 220"/>
+  </g>
+  <g fill="#FBF3DC">
+    <circle cx="300" cy="700" r="8"/><circle cx="420" cy="940" r="7"/><circle cx="560" cy="880" r="8"/>
+    <circle cx="900" cy="560" r="7"/><circle cx="500" cy="220" r="7"/>
+  </g>
+
+  <!-- shooting stars -->
+  <g stroke="#FBF3DC" stroke-width="7" stroke-linecap="round" opacity=".85">
+    <path d="M200 520 L320 570"/><path d="M700 800 L800 840"/>
+  </g>
+  <g fill="#FBF3DC" opacity=".7">
+    <circle cx="320" cy="570" r="6"/><circle cx="800" cy="840" r="6"/>
+  </g>
+
+  <!-- soft horizon band -->
+  <path d="M0 1000 V900 C220 860 380 940 560 900 C720 866 860 930 1000 890 V1000 Z" fill="#26314A"/>
+</svg>

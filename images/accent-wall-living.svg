@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000" width="1400" height="1000" role="img" aria-label="Living room with a deep sage accent wall painted with a large abstract mural, sofa and arc lamp">
+  <title>Living room accent wall mural</title>
+  <defs>
+    <linearGradient id="aw" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F8F2E8"/>
+      <stop offset="1" stop-color="#EBE1D1"/>
+    </linearGradient>
+    <linearGradient id="af" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#CBAA88"/>
+      <stop offset="1" stop-color="#B08F6E"/>
+    </linearGradient>
+    <linearGradient id="deep" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#456357"/>
+      <stop offset="1" stop-color="#2C463B"/>
+    </linearGradient>
+    <linearGradient id="sof" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EFE7DA"/>
+      <stop offset="1" stop-color="#D9CDBA"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1400" height="1000" fill="url(#aw)"/>
+  <rect y="700" width="1400" height="300" fill="url(#af)"/>
+  <rect y="692" width="1400" height="12" fill="#9C7B5C" opacity=".4"/>
+
+  <!-- accent wall block -->
+  <rect x="110" y="90" width="1000" height="610" fill="url(#deep)"/>
+  <!-- abstract mural shapes -->
+  <g>
+    <path d="M110 700 L110 470 Q300 380 430 470 Q540 548 640 452 Q740 356 860 440 Q980 524 1110 452 L1110 700 Z" fill="#3D5B50"/>
+    <path d="M110 700 L110 570 Q260 512 400 574 Q540 636 660 566 Q780 496 900 566 Q1010 630 1110 588 L1110 700 Z" fill="#557A68"/>
+    <circle cx="700" cy="270" r="118" fill="#E7B65C" opacity=".92"/>
+    <circle cx="700" cy="270" r="72" fill="#F3D89B" opacity=".9"/>
+    <g fill="#C2643C" opacity=".9">
+      <path d="M300 200 q60 -50 120 0 q-60 40 -120 0 z"/>
+      <circle cx="960" cy="230" r="34"/>
+      <circle cx="240" cy="640" r="22"/>
+    </g>
+    <g fill="none" stroke="#EBDCC4" stroke-width="6" stroke-linecap="round" opacity=".75">
+      <path d="M420 180 q60 60 120 0"/>
+      <path d="M480 250 q40 40 80 0"/>
+      <path d="M840 620 q70 -70 140 0"/>
+    </g>
+    <g fill="#EBDCC4" opacity=".55">
+      <circle cx="180" cy="180" r="10"/><circle cx="1040" cy="640" r="9"/><circle cx="560" cy="160" r="7"/>
+    </g>
+  </g>
+  <rect x="110" y="90" width="1000" height="610" fill="none" stroke="#EBE1D1" stroke-width="14"/>
+
+  <!-- skirting -->
+  <rect x="90" y="694" width="1040" height="16" rx="6" fill="#EFE4D5"/>
+
+  <!-- rug -->
+  <ellipse cx="700" cy="880" rx="620" ry="108" fill="#DCC9AB" opacity=".7"/>
+  <ellipse cx="700" cy="880" rx="480" ry="76" fill="#EFE4D5" opacity=".6"/>
+  <ellipse cx="700" cy="880" rx="330" ry="50" fill="#C2643C" opacity=".14"/>
+
+  <!-- sofa -->
+  <g>
+    <path d="M300 640 q0 -70 70 -70 h460 q70 0 70 70 v40 h-600 z" fill="url(#sof)"/>
+    <rect x="300" y="672" width="600" height="130" rx="26" fill="#E2D7C6"/>
+    <rect x="336" y="596" width="180" height="96" rx="20" fill="#F6F1E8"/>
+    <rect x="534" y="596" width="180" height="96" rx="20" fill="#F6F1E8"/>
+    <rect x="732" y="596" width="140" height="96" rx="20" fill="#F6F1E8"/>
+    <rect x="372" y="612" width="76" height="76" rx="14" fill="#C2643C" transform="rotate(-7 410 650)"/>
+    <rect x="742" y="614" width="72" height="72" rx="14" fill="#3D5B50" transform="rotate(8 778 650)"/>
+    <rect x="286" y="792" width="24" height="52" rx="9" fill="#6F5238"/>
+    <rect x="890" y="792" width="24" height="52" rx="9" fill="#6F5238"/>
+  </g>
+
+  <!-- coffee table -->
+  <g>
+    <ellipse cx="700" cy="866" rx="180" ry="42" fill="#8E6C4C"/>
+    <rect x="530" y="866" width="340" height="14" rx="7" fill="#7A5C40"/>
+    <rect x="556" y="880" width="14" height="60" rx="6" fill="#5F4830"/>
+    <rect x="830" y="880" width="14" height="60" rx="6" fill="#5F4830"/>
+    <ellipse cx="700" cy="852" rx="180" ry="42" fill="#A9855F"/>
+    <rect x="640" y="816" width="86" height="30" rx="6" fill="#EFE4D5"/>
+    <rect x="734" y="808" width="66" height="38" rx="6" fill="#3D5B50"/>
+    <ellipse cx="622" cy="846" rx="26" ry="12" fill="#D9A441"/>
+  </g>
+
+  <!-- arc floor lamp -->
+  <g stroke="#8E867C" stroke-width="12" fill="none" stroke-linecap="round">
+    <path d="M1210 840 L1210 400 A190 190 0 0 0 1020 210"/>
+  </g>
+  <path d="M964 186 h112 l-28 68 h-56 z" fill="#F0E2C8"/>
+  <ellipse cx="1210" cy="844" rx="54" ry="14" fill="#8E867C"/>
+
+  <!-- plant -->
+  <g>
+    <path d="M1290 840 q-14 -110 16 -172" stroke="#4F6B58" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <path d="M1296 726 q-64 -44 -96 -8 q48 44 96 8" fill="#6E8C7B"/>
+    <path d="M1300 776 q70 -48 106 -4 q-54 46 -106 4" fill="#7E9A88"/>
+    <path d="M1252 828 h104 l-14 88 h-76 z" fill="#B5714C"/>
+    <rect x="1244" y="818" width="120" height="18" rx="8" fill="#C98B62"/>
+  </g>
+
+  <!-- framed prints right -->
+  <g>
+    <rect x="1150" y="300" width="150" height="190" rx="8" fill="#EFE4D5" stroke="#A9855F" stroke-width="8"/>
+    <circle cx="1225" cy="380" r="44" fill="#C2643C" opacity=".8"/>
+    <rect x="1150" y="520" width="150" height="120" rx="8" fill="#EFE4D5" stroke="#A9855F" stroke-width="8"/>
+    <path d="M1166 620 q34 -56 66 -18 q22 -26 34 18 z" fill="#3D5B50" opacity=".8"/>
+  </g>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000" role="img" aria-label="Geometric hand-painted mural panel with arches, half circles and blocks in terracotta and sage">
+  <title>Geometric mural panel</title>
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F2E7D6"/>
+      <stop offset="1" stop-color="#E4D5BE"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1000" fill="url(#g1)"/>
+
+  <g stroke="#C9B79B" stroke-width="2" opacity=".6">
+    <path d="M0 200 H1000 M0 400 H1000 M0 600 H1000 M0 800 H1000"/>
+    <path d="M200 0 V1000 M400 0 V1000 M600 0 V1000 M800 0 V1000"/>
+  </g>
+
+  <!-- arches -->
+  <path d="M120 860 V480 A130 130 0 0 1 380 480 V860 Z" fill="#3D5B50"/>
+  <path d="M420 860 V560 A110 110 0 0 1 640 560 V860 Z" fill="#C2643C"/>
+  <path d="M680 860 V500 A120 120 0 0 1 920 500 V860 Z" fill="#D9A441"/>
+  <!-- half circles -->
+  <path d="M120 440 A130 130 0 0 1 380 440 Z" fill="#E3B05C"/>
+  <circle cx="530" cy="440" r="90" fill="#8FA898"/>
+  <path d="M680 460 A120 120 0 0 1 920 460 Z" fill="#C98B7E"/>
+
+  <!-- blocks -->
+  <rect x="120" y="140" width="140" height="140" rx="16" fill="#3D5B50"/>
+  <rect x="300" y="180" width="120" height="120" rx="60" fill="#C2643C"/>
+  <rect x="480" y="140" width="160" height="60" rx="12" fill="#8FA898"/>
+  <rect x="480" y="230" width="160" height="60" rx="12" fill="#D9A441"/>
+  <rect x="700" y="160" width="80" height="80" rx="14" fill="#2C463B" transform="rotate(20 740 200)"/>
+  <rect x="820" y="200" width="110" height="110" rx="55" fill="#3D5B50"/>
+  <rect x="120" y="330" width="60" height="60" rx="10" fill="#C98B7E"/>
+  <rect x="820" y="330" width="60" height="60" rx="10" fill="#D9A441"/>
+
+  <!-- baseline -->
+  <rect x="60" y="860" width="880" height="18" rx="9" fill="#2C463B"/>
+  <g fill="#C2643C" opacity=".85">
+    <circle cx="200" cy="920" r="18"/><circle cx="420" cy="930" r="14"/><circle cx="640" cy="920" r="20"/><circle cx="840" cy="930" r="14"/>
+  </g>
+</svg>

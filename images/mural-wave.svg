@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000" role="img" aria-label="Abstract wave and colour-field hand-painted mural panel in sage, terracotta and cream">
+  <title>Abstract wave mural panel</title>
+  <defs>
+    <linearGradient id="w1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EFE6D6"/>
+      <stop offset="1" stop-color="#DED0B8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1000" fill="url(#w1)"/>
+
+  <path d="M-40 300 C180 180 340 400 520 300 C700 200 860 400 1040 300 L1040 520 C860 620 700 420 520 520 C340 620 180 400 -40 520 Z" fill="#3D5B50"/>
+  <path d="M-40 480 C180 360 340 580 520 480 C700 380 860 580 1040 480 L1040 700 C860 800 700 600 520 700 C340 800 180 580 -40 700 Z" fill="#6E8C7B" opacity=".9"/>
+  <path d="M-40 660 C180 540 340 760 520 660 C700 560 860 760 1040 660 L1040 820 C860 920 700 720 520 820 C340 920 180 700 -40 820 Z" fill="#C2643C"/>
+  <path d="M-40 820 C180 700 340 920 520 820 C700 720 860 920 1040 820 L1040 1000 L-40 1000 Z" fill="#B98D2F" opacity=".85"/>
+
+  <circle cx="220" cy="200" r="86" fill="#E3B05C"/>
+  <circle cx="220" cy="200" r="46" fill="#F7E7C6"/>
+  <circle cx="800" cy="180" r="52" fill="#C98B7E"/>
+  <circle cx="620" cy="920" r="40" fill="#8FA898"/>
+
+  <g stroke="#F2E7D6" stroke-width="10" fill="none" stroke-linecap="round" opacity=".7">
+    <path d="M120 120 q50 50 100 0 q50 -50 100 0"/>
+    <path d="M700 100 q40 40 80 0 q40 -40 80 0"/>
+  </g>
+  <g fill="#2C463B" opacity=".55">
+    <circle cx="480" cy="130" r="12"/><circle cx="900" cy="300" r="10"/><circle cx="340" cy="900" r="11"/>
+  </g>
+</svg>

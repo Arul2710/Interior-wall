@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" width="1600" height="1100" role="img" aria-label="Interior with an arched wall mural of a sunrise over mountains, console table and lounge chair">
+  <title>Arched sunrise landscape mural in an interior</title>
+  <defs>
+    <linearGradient id="w2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F7F1E6"/>
+      <stop offset="1" stop-color="#EAE0D1"/>
+    </linearGradient>
+    <linearGradient id="f2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#CDAD8C"/>
+      <stop offset="1" stop-color="#B4916F"/>
+    </linearGradient>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E9A96A"/>
+      <stop offset=".55" stop-color="#F0C489"/>
+      <stop offset="1" stop-color="#F6DCB4"/>
+    </linearGradient>
+    <linearGradient id="chair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C2643C"/>
+      <stop offset="1" stop-color="#A04E2C"/>
+    </linearGradient>
+    <radialGradient id="g2" cx=".78" cy=".1" r=".8">
+      <stop offset="0" stop-color="#FFF7E8" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#FFF7E8" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="ac2">
+      <path d="M170 800 L170 430 A310 310 0 0 1 790 430 L790 800 Z"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1600" height="1100" fill="url(#w2)"/>
+  <rect y="800" width="1600" height="300" fill="url(#f2)"/>
+  <rect y="792" width="1600" height="12" fill="#9C7B5C" opacity=".45"/>
+  <rect width="1600" height="1100" fill="url(#g2)"/>
+
+  <!-- arched mural -->
+  <path d="M170 800 L170 430 A310 310 0 0 1 790 430 L790 800 Z" fill="url(#sky)"/>
+  <g clip-path="url(#ac2)">
+    <circle cx="480" cy="452" r="128" fill="#F8E3B4"/>
+    <circle cx="480" cy="452" r="92" fill="#FBEFD2"/>
+    <!-- mountains -->
+    <path d="M120 800 L330 520 L470 700 L590 560 L860 800 Z" fill="#7C6A78"/>
+    <path d="M150 800 L340 566 L470 730 L600 606 L860 800 Z" fill="#5E4F5C" opacity=".85"/>
+    <path d="M300 566 L340 606 L300 640 L262 606 Z" fill="#EFE6DA"/>
+    <path d="M566 606 L600 640 L566 672 L532 640 Z" fill="#EFE6DA"/>
+    <!-- lake -->
+    <rect x="120" y="756" width="740" height="60" fill="#8FA898" opacity=".85"/>
+    <rect x="120" y="756" width="740" height="10" fill="#FBEFD2" opacity=".5"/>
+    <!-- birds -->
+    <g stroke="#4A4038" stroke-width="7" fill="none" stroke-linecap="round" opacity=".8">
+      <path d="M636 402 q26 -22 52 0 q26 -22 52 0"/>
+      <path d="M700 348 q19 -16 38 0 q19 -16 38 0"/>
+    </g>
+  </g>
+  <path d="M170 800 L170 430 A310 310 0 0 1 790 430 L790 800" fill="none" stroke="#EAE0D1" stroke-width="16"/>
+
+  <!-- pendant lights -->
+  <g stroke="#4A423A" stroke-width="5" fill="none">
+    <path d="M1120 0 V210"/><path d="M1300 0 V260"/>
+  </g>
+  <path d="M1060 210 h120 l-30 74 h-60 z" fill="#E9B65C"/>
+  <path d="M1252 260 h96 l-24 60 h-48 z" fill="#C2643C"/>
+  <circle cx="1120" cy="292" r="12" fill="#FBEFD2" opacity=".85"/>
+  <circle cx="1300" cy="328" r="10" fill="#FBEFD2" opacity=".85"/>
+
+  <!-- console table -->
+  <g>
+    <rect x="960" y="700" width="520" height="22" rx="10" fill="#8E6C4C"/>
+    <rect x="992" y="722" width="16" height="120" rx="6" fill="#6F5238"/>
+    <rect x="1432" y="722" width="16" height="120" rx="6" fill="#6F5238"/>
+    <rect x="1170" y="628" width="86" height="72" rx="8" fill="#EFE4D5"/>
+    <rect x="1170" y="628" width="86" height="72" rx="8" fill="none" stroke="#C9B79B" stroke-width="4"/>
+    <path d="M1186 684 q22 -42 44 -12 q16 -22 26 12 z" fill="#3D5B50" opacity=".8"/>
+    <!-- vase with stems -->
+    <path d="M1310 700 q-46 -4 -46 -60 q0 -56 46 -56 q46 0 46 56 q0 56 -46 60 z" fill="#6E8C7B"/>
+    <path d="M1310 590 q-10 -60 -34 -92" stroke="#4F6B58" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M1310 590 q12 -66 42 -96" stroke="#4F6B58" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <circle cx="1274" cy="492" r="19" fill="#D9A441"/>
+    <circle cx="1356" cy="486" r="16" fill="#C2643C"/>
+    <!-- books -->
+    <rect x="1400" y="656" width="70" height="14" rx="4" fill="#3D5B50"/>
+    <rect x="1406" y="640" width="60" height="14" rx="4" fill="#D9A441"/>
+    <rect x="1412" y="626" width="50" height="12" rx="4" fill="#C2643C"/>
+  </g>
+
+  <!-- lounge chair -->
+  <g>
+    <path d="M300 900 q0 -180 60 -230 q70 60 70 230 z" fill="url(#chair)"/>
+    <rect x="286" y="884" width="160" height="46" rx="18" fill="#8F4425"/>
+    <path d="M300 926 l-16 96 M432 926 l16 96" stroke="#3B2F26" stroke-width="13" stroke-linecap="round"/>
+  </g>
+
+  <!-- rug + shadow -->
+  <ellipse cx="900" cy="1000" rx="620" ry="96" fill="#D8C4A6" opacity=".55"/>
+  <ellipse cx="900" cy="1000" rx="470" ry="66" fill="#EFE4D5" opacity=".5"/>
+  <ellipse cx="1220" cy="856" rx="200" ry="20" fill="#8E6C4C" opacity=".18"/>
+  <path d="M900 0 L1200 0 L1560 1100 L1180 1100 Z" fill="#FFF3DC" opacity=".12"/>
+</svg>

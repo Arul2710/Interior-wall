@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" width="1000" height="1250" role="img" aria-label="Hand-painted sun and arc mural panel with a stylised sun, arches and hills">
+  <title>Sun and arc mural panel</title>
+  <defs>
+    <linearGradient id="s1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F3D89B"/>
+      <stop offset="1" stop-color="#E3A76A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1250" fill="#F4EDE0"/>
+
+  <path d="M120 1180 L120 560 A380 380 0 0 1 880 560 L880 1180 Z" fill="url(#s1)"/>
+  <circle cx="500" cy="620" r="220" fill="#FBF3DC"/>
+  <circle cx="500" cy="620" r="150" fill="#F0C489"/>
+
+  <!-- arches -->
+  <path d="M120 1180 L120 900 A180 180 0 0 1 480 900 L480 1180 Z" fill="#C2643C"/>
+  <path d="M520 1180 L520 900 A180 180 0 0 1 880 900 L880 1180 Z" fill="#3D5B50"/>
+
+  <!-- hills -->
+  <path d="M120 1180 L120 1040 Q300 960 500 1050 Q700 1140 880 1040 L880 1180 Z" fill="#6E8C7B"/>
+
+  <!-- rays -->
+  <g stroke="#C2643C" stroke-width="14" stroke-linecap="round" opacity=".75">
+    <path d="M500 300 V232"/><path d="M660 360 L700 300"/><path d="M340 360 L300 300"/>
+    <path d="M740 540 H820"/><path d="M260 540 H180"/><path d="M700 760 L760 800"/><path d="M300 760 L240 800"/>
+  </g>
+
+  <!-- dots + sparks -->
+  <g fill="#C98B7E" opacity=".85">
+    <circle cx="180" cy="220" r="18"/><circle cx="840" cy="240" r="14"/><circle cx="900" cy="760" r="16"/>
+    <circle cx="110" cy="820" r="12"/><circle cx="820" cy="1120" r="14"/>
+  </g>
+  <g fill="#3D5B50" opacity=".6">
+    <circle cx="200" cy="420" r="10"/><circle cx="820" cy="440" r="9"/><circle cx="500" cy="180" r="8"/>
+  </g>
+  <g fill="none" stroke="#B98D2F" stroke-width="10" stroke-linecap="round" opacity=".7">
+    <path d="M300 200 q50 50 100 0"/>
+    <path d="M620 180 q40 40 80 0"/>
+  </g>
+
+  <rect x="0" y="0" width="1000" height="1250" fill="none" stroke="#E4D5BE" stroke-width="10"/>
+</svg>

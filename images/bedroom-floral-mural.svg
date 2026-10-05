@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000" width="1400" height="1000" role="img" aria-label="Bedroom with a large hand-painted floral mural above the headboard, pendant lights and nightstands">
+  <title>Bedroom with a large floral wall mural</title>
+  <defs>
+    <linearGradient id="bw" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F9F3EA"/>
+      <stop offset="1" stop-color="#EDE3D3"/>
+    </linearGradient>
+    <linearGradient id="bf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#CEAE8B"/>
+      <stop offset="1" stop-color="#B3926F"/>
+    </linearGradient>
+    <linearGradient id="bfl" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F2E2E0"/>
+      <stop offset="1" stop-color="#E9CFCC"/>
+    </linearGradient>
+    <clipPath id="bclip"><rect x="300" y="70" width="800" height="500"/></clipPath>
+  </defs>
+
+  <rect width="1400" height="1000" fill="url(#bw)"/>
+  <rect y="700" width="1400" height="300" fill="url(#bf)"/>
+  <rect y="692" width="1400" height="12" fill="#9C7B5C" opacity=".4"/>
+
+  <!-- floral mural above bed -->
+  <rect x="300" y="70" width="800" height="500" fill="url(#bfl)"/>
+  <g clip-path="url(#bclip)">
+    <g stroke="#7E9A88" stroke-width="6" fill="none" stroke-linecap="round">
+      <path d="M420 570 C430 420 440 300 452 170"/>
+      <path d="M700 570 C692 420 684 300 674 180"/>
+      <path d="M980 570 C988 430 996 320 1008 200"/>
+      <path d="M560 570 C566 470 572 400 582 330"/>
+      <path d="M840 570 C834 470 828 400 818 330"/>
+    </g>
+    <g fill="#8FA898">
+      <ellipse cx="408" cy="470" rx="46" ry="21" transform="rotate(-32 408 470)"/>
+      <ellipse cx="500" cy="416" rx="46" ry="21" transform="rotate(28 500 416)"/>
+      <ellipse cx="416" cy="330" rx="40" ry="18" transform="rotate(-30 416 330)"/>
+      <ellipse cx="502" cy="266" rx="40" ry="18" transform="rotate(26 502 266)"/>
+      <ellipse cx="726" cy="470" rx="46" ry="21" transform="rotate(30 726 470)"/>
+      <ellipse cx="634" cy="416" rx="46" ry="21" transform="rotate(-28 634 416)"/>
+      <ellipse cx="720" cy="330" rx="40" ry="18" transform="rotate(30 720 330)"/>
+      <ellipse cx="634" cy="266" rx="40" ry="18" transform="rotate(-26 634 266)"/>
+      <ellipse cx="1014" cy="470" rx="42" ry="19" transform="rotate(32 1014 470)"/>
+      <ellipse cx="930" cy="412" rx="42" ry="19" transform="rotate(-30 930 412)"/>
+      <ellipse cx="1008" cy="330" rx="36" ry="16" transform="rotate(30 1008 330)"/>
+      <ellipse cx="548" cy="430" rx="36" ry="16" transform="rotate(-26 548 430)"/>
+      <ellipse cx="614" cy="386" rx="36" ry="16" transform="rotate(24 614 386)"/>
+      <ellipse cx="866" cy="430" rx="36" ry="16" transform="rotate(26 866 430)"/>
+      <ellipse cx="800" cy="386" rx="36" ry="16" transform="rotate(-24 800 386)"/>
+    </g>
+    <g fill="#D2683F">
+      <circle cx="452" cy="150" r="52"/><circle cx="452" cy="150" r="21" fill="#F6E3C0"/>
+      <circle cx="674" cy="158" r="46"/><circle cx="674" cy="158" r="19" fill="#F6E3C0"/>
+      <circle cx="1008" cy="180" r="44"/><circle cx="1008" cy="180" r="18" fill="#F6E3C0"/>
+      <circle cx="582" cy="316" r="34"/><circle cx="582" cy="316" r="14" fill="#F6E3C0"/>
+      <circle cx="818" cy="316" r="34"/><circle cx="818" cy="316" r="14" fill="#F6E3C0"/>
+    </g>
+    <g fill="#E3B05C" opacity=".9">
+      <circle cx="360" cy="230" r="26"/><circle cx="880" cy="200" r="24"/>
+      <circle cx="640" cy="240" r="20"/><circle cx="1120" cy="330" r="22"/><circle cx="300" cy="380" r="18"/>
+    </g>
+    <g fill="#C98B7E" opacity=".85">
+      <circle cx="540" cy="200" r="14"/><circle cx="790" cy="180" r="12"/><circle cx="930" cy="290" r="16"/><circle cx="470" cy="520" r="14"/>
+    </g>
+  </g>
+  <rect x="300" y="70" width="800" height="500" fill="none" stroke="#EDE3D3" stroke-width="14"/>
+
+  <!-- pendant lights -->
+  <g stroke="#4A423A" stroke-width="5" fill="none">
+    <path d="M480 0 V120"/><path d="M920 0 V120"/>
+  </g>
+  <path d="M436 120 h88 l-22 56 h-44 z" fill="#E7B65C"/>
+  <path d="M876 120 h88 l-22 56 h-44 z" fill="#E7B65C"/>
+  <circle cx="480" cy="184" r="9" fill="#FBF1DC" opacity=".9"/>
+  <circle cx="920" cy="184" r="9" fill="#FBF1DC" opacity=".9"/>
+
+  <!-- headboard + bed -->
+  <g>
+    <rect x="360" y="500" width="680" height="180" rx="26" fill="#C4A583"/>
+    <rect x="360" y="500" width="680" height="26" rx="13" fill="#B2916C"/>
+    <path d="M392 560 h616 M392 620 h616" stroke="#B2916C" stroke-width="6" opacity=".8"/>
+    <rect x="330" y="664" width="740" height="120" rx="20" fill="#F7F1E6"/>
+    <rect x="330" y="764" width="740" height="66" rx="16" fill="#E7DCC9"/>
+    <rect x="500" y="612" width="180" height="66" rx="22" fill="#FFFFFF"/>
+    <rect x="720" y="612" width="180" height="66" rx="22" fill="#FFFFFF"/>
+    <rect x="620" y="700" width="160" height="52" rx="18" fill="#C2643C"/>
+    <rect x="306" y="826" width="26" height="54" rx="10" fill="#6F5238"/>
+    <rect x="1068" y="826" width="26" height="54" rx="10" fill="#6F5238"/>
+  </g>
+
+  <!-- nightstands -->
+  <g>
+    <rect x="140" y="676" width="160" height="130" rx="14" fill="#A9855F"/>
+    <rect x="140" y="676" width="160" height="18" rx="9" fill="#BB9A74"/>
+    <rect x="176" y="712" width="88" height="12" rx="6" fill="#8E6C4C"/>
+    <rect x="176" y="756" width="88" height="12" rx="6" fill="#8E6C4C"/>
+    <rect x="1100" y="676" width="160" height="130" rx="14" fill="#A9855F"/>
+    <rect x="1100" y="676" width="160" height="18" rx="9" fill="#BB9A74"/>
+    <rect x="1136" y="712" width="88" height="12" rx="6" fill="#8E6C4C"/>
+    <rect x="1136" y="756" width="88" height="12" rx="6" fill="#8E6C4C"/>
+    <!-- table lamps -->
+    <path d="M170 676 h100 l-24 -62 h-52 z" fill="#F0E2C8"/>
+    <rect x="216" y="606" width="10" height="12" fill="#C9B79B"/>
+    <path d="M1130 676 h100 l-24 -62 h-52 z" fill="#F0E2C8"/>
+    <rect x="1176" y="606" width="10" height="12" fill="#C9B79B"/>
+    <!-- books + vase -->
+    <rect x="150" y="652" width="70" height="24" rx="5" fill="#3D5B50"/>
+    <rect x="224" y="660" width="52" height="16" rx="5" fill="#D9A441"/>
+    <path d="M1170 676 q-28 -4 -28 -34 q0 -30 28 -30 q28 0 28 30 q0 30 -28 34 z" fill="#6E8C7B"/>
+    <circle cx="1170" cy="600" r="16" fill="#D2683F"/>
+  </g>
+
+  <!-- rug -->
+  <ellipse cx="700" cy="920" rx="600" ry="86" fill="#DCC9AB" opacity=".7"/>
+  <ellipse cx="700" cy="920" rx="450" ry="60" fill="#F2E7D6" opacity=".6"/>
+
+  <!-- bench -->
+  <g>
+    <rect x="560" y="852" width="280" height="26" rx="12" fill="#C4A583"/>
+    <rect x="580" y="878" width="14" height="42" rx="6" fill="#8E6C4C"/>
+    <rect x="806" y="878" width="14" height="42" rx="6" fill="#8E6C4C"/>
+  </g>
+</svg>

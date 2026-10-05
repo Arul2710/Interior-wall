@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000" width="1400" height="1000" role="img" aria-label="Cafe and restaurant interior with a large hand-painted wall mural, banquette seating and pendant lights">
+  <title>Cafe interior with a painted mural wall</title>
+  <defs>
+    <linearGradient id="cw" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2E2A26"/>
+      <stop offset="1" stop-color="#241F1C"/>
+    </linearGradient>
+    <linearGradient id="cf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6B5340"/>
+      <stop offset="1" stop-color="#4E3B2C"/>
+    </linearGradient>
+    <linearGradient id="cmur" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C2643C"/>
+      <stop offset=".5" stop-color="#D98B4E"/>
+      <stop offset="1" stop-color="#B0523A"/>
+    </linearGradient>
+    <radialGradient id="cglow" cx=".5" cy=".15" r=".8">
+      <stop offset="0" stop-color="#FFD9A0" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#FFD9A0" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="cclip"><rect x="150" y="150" width="1100" height="480"/></clipPath>
+  </defs>
+
+  <rect width="1400" height="1000" fill="url(#cw)"/>
+  <rect y="760" width="1400" height="240" fill="url(#cf)"/>
+  <rect width="1400" height="1000" fill="url(#cglow)"/>
+
+  <!-- mural -->
+  <rect x="150" y="150" width="1100" height="480" fill="url(#cmur)"/>
+  <g clip-path="url(#cclip)">
+    <circle cx="700" cy="330" r="140" fill="#F0C489" opacity=".9"/>
+    <circle cx="700" cy="330" r="86" fill="#F8E3B4" opacity=".85"/>
+    <!-- rays -->
+    <g stroke="#F6E3C0" stroke-width="10" opacity=".45" stroke-linecap="round">
+      <path d="M700 150 V60"/><path d="M860 200 L930 130"/><path d="M540 200 L470 130"/>
+      <path d="M930 330 H1030"/><path d="M470 330 H370"/>
+    </g>
+    <!-- rolling forms -->
+    <path d="M100 560 Q300 430 520 546 T900 520 T1300 552 L1300 700 L100 700 Z" fill="#8C4A32" opacity=".9"/>
+    <path d="M100 630 Q340 528 600 618 T1100 600 T1300 626 L1300 700 L100 700 Z" fill="#5F3B2C" opacity=".92"/>
+    <!-- coffee plant leaves -->
+    <g fill="#3D5B50" opacity=".9">
+      <ellipse cx="300" cy="520" rx="70" ry="26" transform="rotate(-18 300 520)"/>
+      <ellipse cx="1120" cy="530" rx="70" ry="26" transform="rotate(16 1120 530)"/>
+      <ellipse cx="200" cy="600" rx="58" ry="22" transform="rotate(10 200 600)"/>
+      <ellipse cx="1230" cy="606" rx="58" ry="22" transform="rotate(-10 1230 606)"/>
+    </g>
+    <!-- berries / dots -->
+    <g fill="#F6E3C0" opacity=".9">
+      <circle cx="420" cy="420" r="10"/><circle cx="980" cy="430" r="9"/>
+      <circle cx="500" cy="250" r="8"/><circle cx="900" cy="250" r="7"/>
+      <circle cx="250" cy="330" r="7"/><circle cx="1150" cy="330" r="8"/>
+    </g>
+  </g>
+  <rect x="150" y="150" width="1100" height="480" fill="none" stroke="#2E2A26" stroke-width="12"/>
+
+  <!-- neon-style sign bar -->
+  <g>
+    <rect x="490" y="672" width="420" height="12" rx="6" fill="#4A4038"/>
+    <text x="700" y="704" text-anchor="middle" font-family="Georgia, serif" font-size="40" fill="#F6E3C0" letter-spacing="6">BREW &amp; BRUSH</text>
+  </g>
+
+  <!-- pendant lights -->
+  <g stroke="#3A322B" stroke-width="5" fill="none">
+    <path d="M330 0 V170"/><path d="M700 0 V140"/><path d="M1070 0 V170"/>
+  </g>
+  <path d="M282 170 h96 l-24 62 h-48 z" fill="#E7B65C"/>
+  <path d="M652 140 h96 l-24 62 h-48 z" fill="#E7B65C"/>
+  <path d="M1022 170 h96 l-24 62 h-48 z" fill="#E7B65C"/>
+  <circle cx="330" cy="244" r="10" fill="#FFE9BE" opacity=".95"/>
+  <circle cx="700" cy="214" r="10" fill="#FFE9BE" opacity=".95"/>
+  <circle cx="1070" cy="244" r="10" fill="#FFE9BE" opacity=".95"/>
+
+  <!-- banquette -->
+  <g>
+    <rect x="90" y="600" width="1220" height="120" rx="16" fill="#3D5B50"/>
+    <rect x="90" y="600" width="1220" height="26" rx="13" fill="#4F6B58"/>
+    <g fill="#C2643C"><rect x="140" y="546" width="72" height="60" rx="12"/><rect x="640" y="546" width="72" height="60" rx="12"/><rect x="1150" y="546" width="72" height="60" rx="12"/></g>
+    <g fill="#D9A441"><rect x="380" y="546" width="72" height="60" rx="12"/><rect x="880" y="546" width="72" height="60" rx="12"/></g>
+    <rect x="90" y="720" width="1220" height="60" rx="12" fill="#33493F"/>
+  </g>
+
+  <!-- tables + stools -->
+  <g>
+    <ellipse cx="340" cy="812" rx="120" ry="30" fill="#8A6E52"/>
+    <rect x="332" y="812" width="16" height="76" rx="7" fill="#5C4632"/>
+    <ellipse cx="340" cy="890" rx="52" ry="14" fill="#5C4632"/>
+    <ellipse cx="1060" cy="812" rx="120" ry="30" fill="#8A6E52"/>
+    <rect x="1052" y="812" width="16" height="76" rx="7" fill="#5C4632"/>
+    <ellipse cx="1060" cy="890" rx="52" ry="14" fill="#5C4632"/>
+    <!-- cups -->
+    <rect x="300" y="778" width="34" height="30" rx="6" fill="#F0E6D4"/>
+    <rect x="400" y="786" width="26" height="22" rx="5" fill="#C2643C"/>
+    <rect x="1020" y="778" width="34" height="30" rx="6" fill="#F0E6D4"/>
+    <rect x="1120" y="786" width="26" height="22" rx="5" fill="#D9A441"/>
+    <!-- stools -->
+    <g fill="#8A6E52">
+      <rect x="180" y="856" width="70" height="16" rx="8"/>
+      <rect x="190" y="872" width="12" height="66" rx="6" fill="#5C4632"/>
+      <rect x="228" y="872" width="12" height="66" rx="6" fill="#5C4632"/>
+      <rect x="900" y="856" width="70" height="16" rx="8"/>
+      <rect x="910" y="872" width="12" height="66" rx="6" fill="#5C4632"/>
+      <rect x="948" y="872" width="12" height="66" rx="6" fill="#5C4632"/>
+    </g>
+  </g>
+
+  <!-- plant -->
+  <g>
+    <path d="M60 940 q-10 -120 20 -190" stroke="#4F6B58" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <path d="M66 806 q-70 -48 -104 -10 q52 48 104 10" fill="#6E8C7B"/>
+    <path d="M72 866 q78 -52 116 -6 q-58 50 -116 6" fill="#7E9A88"/>
+    <path d="M20 928 h128 l-16 96 h-96 z" fill="#B5714C"/>
+    <rect x="12" y="916" width="144" height="20" rx="9" fill="#C98B62"/>
+  </g>
+</svg>

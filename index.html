@@ -1,247 +1,473 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index - MuralArt Studio</title>
+    <title>INDEX | ArtMural Studio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: { extend: { colors: { primary: '#d97706', dark: '#111827' } } }
+        }
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        }
+        if (localStorage.getItem('rtl') === 'true') {
+            document.documentElement.setAttribute('dir', 'rtl');
+        }
+    </script>
 </head>
-<body class="antialiased fade-in">
-    
-<nav class="sticky top-0 z-50 bg-white shadow-sm border-b border-gray-100 transition-colors">
-    <div class="max-w-7xl mx-auto px-4 lg:px-8">
-        <div class="flex justify-between h-20 items-center">
-            <!-- Logo -->
-            <a href="index.html" class="text-2xl font-serif font-bold tracking-tight text-gray-900">
-                Mural<span class="text-[#d4a373]">Art</span>
-            </a>
+<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300">
+
+<header class="fixed w-full z-50 glass-nav border-b border-gray-200 dark:border-gray-800 transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <div class="flex-shrink-0">
+                <a href="index.html" class="no-active text-3xl font-serif font-bold text-gray-900 dark:text-white tracking-tight">Art<span class="text-primary">Mural</span></a>
+            </div>
             
-            <!-- Desktop Menu -->
-            <div class="hidden lg:flex space-x-8 items-center">
-                <!-- Home Dropdown -->
-                <div class="relative group">
-                    <button class="nav-link text-gray-700 hover:text-[#d4a373] font-medium flex items-center h-20">
-                        Home 
-                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                    </button>
-                    <div class="absolute left-0 mt-0 w-48 bg-white border border-gray-100 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 rounded-b">
-                        <a href="index.html" class="block px-6 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#d4a373]">Home 1 (Classic)</a>
-                        <a href="home-2.html" class="block px-6 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#d4a373]">Home 2 (Editorial)</a>
+            <nav class="hidden lg:flex items-center space-x-8">
+                <div class="relative group py-8">
+                    <a href="#" class="nav-link text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary font-medium flex items-center gap-1 transition-colors">
+                        Home <i class="fas fa-chevron-down text-[10px]"></i>
+                    </a>
+                    <div class="absolute top-full left-0 w-48 bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-b-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top -translate-y-2 group-hover:translate-y-0">
+                        <a href="index.html" class="block px-5 py-3 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-primary transition-colors">Home 1</a>
+                        <a href="home-2.html" class="block px-5 py-3 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-primary transition-colors">Home 2</a>
+                    </div>
+                </div>
+                
+                <a href="about.html" class="nav-link text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary font-medium transition-colors">About</a>
+                <a href="services.html" class="nav-link text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary font-medium transition-colors">Services</a>
+                <a href="portfolio.html" class="nav-link text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary font-medium transition-colors">Portfolio</a>
+                <a href="pricing.html" class="nav-link text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary font-medium transition-colors">Pricing</a>
+                <a href="blog.html" class="nav-link text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary font-medium transition-colors">Blog</a>
+                <a href="contact.html" class="nav-link text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary font-medium transition-colors">Contact</a>
+                
+                <div class="relative group py-8">
+                    <a href="#" class="nav-link text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary font-medium flex items-center gap-1 transition-colors">
+                        Account <i class="fas fa-chevron-down text-[10px]"></i>
+                    </a>
+                    <div class="absolute top-full right-0 w-56 bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-b-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top -translate-y-2 group-hover:translate-y-0">
+                        <div class="px-5 py-2 text-[10px] font-bold text-gray-400 uppercase tracking-wider bg-gray-50 dark:bg-gray-900/50">Admin</div>
+                        <a href="admin/dashboard.html" class="block px-5 py-2.5 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-primary">Admin Dashboard</a>
+                        <a href="admin/projects.html" class="block px-5 py-2.5 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-primary">Manage Projects</a>
+                        <a href="admin/messages.html" class="block px-5 py-2.5 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-primary">Messages</a>
+                        <a href="admin/settings.html" class="block px-5 py-2.5 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-primary">Settings</a>
+                        
+                        <div class="px-5 py-2 text-[10px] font-bold text-gray-400 uppercase tracking-wider bg-gray-50 dark:bg-gray-900/50 border-t border-gray-100 dark:border-gray-700">User</div>
+                        <a href="user/dashboard.html" class="block px-5 py-2.5 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-primary">User Dashboard</a>
+                        <a href="user/bookings.html" class="block px-5 py-2.5 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-primary">My Bookings</a>
+                        <a href="user/saved-projects.html" class="block px-5 py-2.5 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-primary">Saved Projects</a>
+                        <a href="user/profile.html" class="block px-5 py-2.5 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-primary">Profile</a>
                     </div>
                 </div>
 
-                <a href="about.html" class="nav-link text-gray-700 hover:text-[#d4a373] font-medium h-20 flex items-center">About</a>
-                <a href="services.html" class="nav-link text-gray-700 hover:text-[#d4a373] font-medium h-20 flex items-center">Services</a>
-                <a href="portfolio.html" class="nav-link text-gray-700 hover:text-[#d4a373] font-medium h-20 flex items-center">Portfolio</a>
-                <a href="pricing.html" class="nav-link text-gray-700 hover:text-[#d4a373] font-medium h-20 flex items-center">Pricing</a>
-                <a href="blog.html" class="nav-link text-gray-700 hover:text-[#d4a373] font-medium h-20 flex items-center">Blog</a>
-                <a href="contact.html" class="nav-link text-gray-700 hover:text-[#d4a373] font-medium h-20 flex items-center">Contact</a>
-
-                <!-- Account Dropdown -->
-                <div class="relative group ml-4 border-l pl-4 border-gray-200">
-                    <button class="nav-link text-gray-700 hover:text-[#d4a373] font-medium flex items-center h-20">
-                        Account
-                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                <div class="flex items-center space-x-3 pl-4 border-l border-gray-200 dark:border-gray-700">
+                    <button class="theme-toggle-btn text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors focus:outline-none p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800">
+                        <i class="theme-icon fas fa-moon"></i>
                     </button>
-                    <div class="absolute right-0 mt-0 w-56 bg-white border border-gray-100 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 rounded-b">
-                        <div class="px-4 py-2 bg-gray-50 text-xs font-bold text-gray-500 uppercase">Admin</div>
-                        <a href="admin/dashboard.html" class="block px-6 py-2 text-sm text-gray-700 hover:bg-gray-100">Admin Dashboard</a>
-                        <a href="admin/projects.html" class="block px-6 py-2 text-sm text-gray-700 hover:bg-gray-100">Manage Projects</a>
-                        <a href="admin/messages.html" class="block px-6 py-2 text-sm text-gray-700 hover:bg-gray-100">Messages</a>
-                        <a href="admin/settings.html" class="block px-6 py-2 text-sm text-gray-700 hover:bg-gray-100">Settings</a>
-                        <div class="border-t border-gray-100 my-1"></div>
-                        <div class="px-4 py-2 bg-gray-50 text-xs font-bold text-gray-500 uppercase">User</div>
-                        <a href="user/dashboard.html" class="block px-6 py-2 text-sm text-gray-700 hover:bg-gray-100">User Dashboard</a>
-                        <a href="user/bookings.html" class="block px-6 py-2 text-sm text-gray-700 hover:bg-gray-100">My Bookings</a>
-                        <a href="user/saved-projects.html" class="block px-6 py-2 text-sm text-gray-700 hover:bg-gray-100">Saved Projects</a>
-                        <a href="user/profile.html" class="block px-6 py-2 text-sm text-gray-700 hover:bg-gray-100">Profile</a>
-                        <div class="border-t border-gray-100 my-1"></div>
-                        <a href="login.html" class="block px-6 py-2 text-sm text-[#d4a373] hover:bg-gray-50 font-medium">Log out</a>
-                    </div>
+                    <button class="rtl-toggle-btn text-xs font-bold text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors focus:outline-none p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-800">
+                        RTL
+                    </button>
                 </div>
+            </nav>
 
-                <!-- Utilities -->
-                <button id="theme-toggle" class="p-2 text-gray-500 hover:text-gray-900 rounded-full hover:bg-gray-100 transition" aria-label="Toggle Dark Mode">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+            <div class="flex items-center lg:hidden space-x-4">
+                <button class="theme-toggle-btn text-gray-500 dark:text-gray-400">
+                    <i class="theme-icon fas fa-moon text-xl"></i>
                 </button>
-                <button id="rtl-toggle" class="p-2 text-gray-500 hover:text-gray-900 rounded-full hover:bg-gray-100 transition text-sm font-bold" aria-label="Toggle RTL">
-                    RTL
-                </button>
-            </div>
-
-            <!-- Mobile Menu Button -->
-            <div class="lg:hidden flex items-center space-x-2">
-                <button id="theme-toggle-mobile" class="p-2 text-gray-500 rounded"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg></button>
-                <button id="rtl-toggle-mobile" class="p-2 text-gray-500 rounded font-bold text-sm">RTL</button>
-                <button id="mobile-menu-btn" class="p-2 text-gray-900 focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                <button id="mobile-btn" class="text-gray-900 dark:text-white focus:outline-none p-2">
+                    <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
         </div>
     </div>
-    
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 px-4 pt-2 pb-6 space-y-1 shadow-inner h-screen overflow-y-auto">
-        <div class="py-2"><p class="text-xs font-bold text-gray-400 uppercase tracking-wider">Navigation</p></div>
-        <a href="index.html" class="block px-4 py-3 rounded text-gray-700 font-medium hover:bg-gray-50">Home 1</a>
-        <a href="home-2.html" class="block px-4 py-3 rounded text-gray-700 font-medium hover:bg-gray-50">Home 2</a>
-        <a href="about.html" class="block px-4 py-3 rounded text-gray-700 font-medium hover:bg-gray-50">About</a>
-        <a href="services.html" class="block px-4 py-3 rounded text-gray-700 font-medium hover:bg-gray-50">Services</a>
-        <a href="portfolio.html" class="block px-4 py-3 rounded text-gray-700 font-medium hover:bg-gray-50">Portfolio</a>
-        <a href="pricing.html" class="block px-4 py-3 rounded text-gray-700 font-medium hover:bg-gray-50">Pricing</a>
-        <a href="blog.html" class="block px-4 py-3 rounded text-gray-700 font-medium hover:bg-gray-50">Blog</a>
-        <a href="contact.html" class="block px-4 py-3 rounded text-gray-700 font-medium hover:bg-gray-50">Contact</a>
+</header>
+
+<div id="mobile-menu" class="fixed inset-0 z-[60] bg-white dark:bg-gray-900 transform translate-x-full transition-transform duration-300 overflow-y-auto">
+    <div class="p-6">
+        <div class="flex justify-between items-center mb-8">
+            <span class="text-2xl font-serif font-bold text-gray-900 dark:text-white">Art<span class="text-primary">Mural</span></span>
+            <button id="mobile-close" class="text-gray-500 hover:text-primary focus:outline-none">
+                <i class="fas fa-times text-2xl"></i>
+            </button>
+        </div>
         
-        <div class="py-2 mt-4"><p class="text-xs font-bold text-gray-400 uppercase tracking-wider">Admin</p></div>
-        <a href="admin/dashboard.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Dashboard</a>
-        <a href="admin/projects.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Projects</a>
-        <a href="admin/messages.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Messages</a>
-        
-        <div class="py-2 mt-4"><p class="text-xs font-bold text-gray-400 uppercase tracking-wider">User</p></div>
-        <a href="user/dashboard.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Dashboard</a>
-        <a href="user/bookings.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Bookings</a>
-        <a href="user/profile.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50">Profile</a>
-    </div>
-</nav>
-
-    <main>
-        
-    <!-- Sec 1: Hero -->
-    <section class="py-24 bg-gray-50 border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <h1 class="text-5xl md:text-6xl font-serif font-bold mb-6">Index Hero</h1>
-            <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-10">Premium Index content goes here. Discover the art of transforming spaces.</p>
-            <a href="contact.html" class="bg-[#d4a373] text-white px-8 py-4 rounded-full font-bold hover:bg-[#b5835a] transition">Book Consultation</a>
-        </div>
-    </section>
-    
-    <!-- Sec 2: Intro -->
-    <section class="py-20">
-        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
-            <div class="w-full md:w-1/2">
-                <img src="images/living-room-mural.jpg" alt="Intro" class="rounded-xl shadow-2xl w-full h-96 object-cover">
-            </div>
-            <div class="w-full md:w-1/2">
-                <h2 class="text-3xl font-serif font-bold mb-6">Elevate Your Index</h2>
-                <p class="text-gray-600 mb-6 text-lg leading-relaxed">We bring spaces to life. Each project is uniquely crafted to reflect your personality and style.</p>
-                <ul class="space-y-4 mb-8">
-                    <li class="flex items-center"><svg class="w-5 h-5 text-[#d4a373] mr-3" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg> Hand-painted with care</li>
-                    <li class="flex items-center"><svg class="w-5 h-5 text-[#d4a373] mr-3" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg> Premium non-toxic paints</li>
-                </ul>
-                <a href="about.html" class="text-[#d4a373] font-bold hover:underline">Learn More &rarr;</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sec 3: Grid feature -->
-    <section class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-4xl font-serif font-bold text-center mb-16">Key Features</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition">
-                    <h3 class="text-xl font-bold mb-4">Custom Design</h3>
-                    <p class="text-gray-600 mb-6">Tailored exactly to your space dimensions and aesthetic preferences.</p>
-                    <a href="service-details.html" class="text-[#d4a373] font-medium">Explore &rarr;</a>
-                </div>
-                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition">
-                    <h3 class="text-xl font-bold mb-4">Expert Execution</h3>
-                    <p class="text-gray-600 mb-6">Painted by master artists with years of specialized experience.</p>
-                    <a href="service-details.html" class="text-[#d4a373] font-medium">Explore &rarr;</a>
-                </div>
-                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition">
-                    <h3 class="text-xl font-bold mb-4">Lasting Quality</h3>
-                    <p class="text-gray-600 mb-6">Sealed and protected to ensure your art lasts for decades.</p>
-                    <a href="service-details.html" class="text-[#d4a373] font-medium">Explore &rarr;</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sec 4: Gallery Preview -->
-    <section class="py-20">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="flex justify-between items-end mb-12">
-                <h2 class="text-4xl font-serif font-bold">Featured Artwork</h2>
-                <a href="portfolio.html" class="hidden md:inline-block border border-gray-900 text-gray-900 px-6 py-2 rounded hover:bg-gray-900 hover:text-white transition">View All Projects</a>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                <img src="images/kids-room-mural.jpg" class="w-full h-64 object-cover rounded shadow hover:opacity-90 transition cursor-pointer">
-                <img src="images/commercial-mural.jpg" class="w-full h-64 object-cover rounded shadow hover:opacity-90 transition cursor-pointer">
-                <img src="images/accent-wall.jpg" class="w-full h-64 object-cover rounded shadow hover:opacity-90 transition cursor-pointer">
-                <img src="images/hero-mural.jpg" class="w-full h-64 object-cover rounded shadow hover:opacity-90 transition cursor-pointer">
-            </div>
-        </div>
-    </section>
-
-    <!-- Sec 5: Testimonial -->
-    <section class="py-24 bg-[#1a1a1a] text-white">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <svg class="w-12 h-12 text-[#d4a373] mx-auto mb-6 opacity-50" fill="currentColor" viewBox="0 0 32 32"><path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.896 3.456-8.352 9.12-8.352 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"/></svg>
-            <p class="text-2xl md:text-3xl font-serif italic mb-8 leading-relaxed">"The level of detail and passion they brought to our space was incredible. The mural transformed our entirely plain room into a work of art."</p>
+        <nav class="flex flex-col space-y-4">
             <div>
-                <p class="font-bold text-lg">Sarah Jenkins</p>
-                <p class="text-gray-400">Homeowner, New York</p>
+                <button class="mobile-dropdown-toggle w-full flex justify-between items-center text-lg font-medium text-gray-900 dark:text-white py-2" data-target="mob-home">
+                    Home <i class="fas fa-chevron-down text-sm transition-transform"></i>
+                </button>
+                <div id="mob-home" class="hidden pl-4 py-2 space-y-2 border-l-2 border-gray-100 dark:border-gray-800 ml-2 mt-2">
+                    <a href="index.html" class="block text-gray-600 dark:text-gray-400 py-1">Home 1</a>
+                    <a href="home-2.html" class="block text-gray-600 dark:text-gray-400 py-1">Home 2</a>
+                </div>
+            </div>
+            <a href="about.html" class="text-lg font-medium text-gray-900 dark:text-white py-2">About</a>
+            <a href="services.html" class="text-lg font-medium text-gray-900 dark:text-white py-2">Services</a>
+            <a href="portfolio.html" class="text-lg font-medium text-gray-900 dark:text-white py-2">Portfolio</a>
+            <a href="pricing.html" class="text-lg font-medium text-gray-900 dark:text-white py-2">Pricing</a>
+            <a href="blog.html" class="text-lg font-medium text-gray-900 dark:text-white py-2">Blog</a>
+            <a href="contact.html" class="text-lg font-medium text-gray-900 dark:text-white py-2">Contact</a>
+            
+            <div>
+                <button class="mobile-dropdown-toggle w-full flex justify-between items-center text-lg font-medium text-gray-900 dark:text-white py-2" data-target="mob-account">
+                    Account <i class="fas fa-chevron-down text-sm transition-transform"></i>
+                </button>
+                <div id="mob-account" class="hidden pl-4 py-2 space-y-4 border-l-2 border-gray-100 dark:border-gray-800 ml-2 mt-2">
+                    <div>
+                        <div class="text-xs font-bold text-gray-400 uppercase mb-2">Admin</div>
+                        <a href="admin/dashboard.html" class="block text-gray-600 dark:text-gray-400 py-1">Admin Dashboard</a>
+                        <a href="admin/projects.html" class="block text-gray-600 dark:text-gray-400 py-1">Manage Projects</a>
+                        <a href="admin/messages.html" class="block text-gray-600 dark:text-gray-400 py-1">Messages</a>
+                        <a href="admin/settings.html" class="block text-gray-600 dark:text-gray-400 py-1">Settings</a>
+                    </div>
+                    <div>
+                        <div class="text-xs font-bold text-gray-400 uppercase mb-2">User</div>
+                        <a href="user/dashboard.html" class="block text-gray-600 dark:text-gray-400 py-1">User Dashboard</a>
+                        <a href="user/bookings.html" class="block text-gray-600 dark:text-gray-400 py-1">My Bookings</a>
+                        <a href="user/saved-projects.html" class="block text-gray-600 dark:text-gray-400 py-1">Saved Projects</a>
+                        <a href="user/profile.html" class="block text-gray-600 dark:text-gray-400 py-1">Profile</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pt-6 border-t border-gray-200 dark:border-gray-800 flex justify-between items-center">
+                <button class="rtl-toggle-btn text-sm font-bold text-gray-600 dark:text-gray-400 py-2">Toggle RTL Direction</button>
+            </div>
+        </nav>
+    </div>
+</div>
+<main class="pt-20">
+
+<section class="relative min-h-[90vh] flex items-center justify-center text-center px-4 overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center transform scale-105 transition-transform duration-1000" style="background-image: url('https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=2070&auto=format&fit=crop');"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-gray-900/80 via-gray-900/60 to-gray-900/90 dark:from-gray-900/90 dark:to-gray-900/95"></div>
+    <div class="relative z-10 max-w-5xl mx-auto text-white">
+        <h1 class="text-5xl md:text-7xl lg:text-8xl font-serif font-bold mb-6 leading-tight drop-shadow-lg">Transform Your Walls Into Art</h1>
+        <p class="text-xl md:text-2xl mb-12 font-light max-w-3xl mx-auto text-gray-200">Custom murals and interior wall art designed to make every space feel deeply personal and unique.</p>
+        <div class="flex flex-col sm:flex-row gap-5 justify-center">
+            <a href="contact.html" class="bg-primary hover:bg-amber-600 text-white px-10 py-4 rounded-full font-semibold transition-all shadow-lg hover:shadow-primary/30 transform hover:-translate-y-1">Book a Consultation</a>
+            
+        </div>
+    </div>
+</section>
+
+<section class="py-24 bg-white dark:bg-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col lg:flex-row items-center gap-16">
+            <div class="w-full lg:w-1/2">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?q=80&w=2000&auto=format&fit=crop" alt="Crafting Spaces with Passion" class="rounded-2xl shadow-2xl w-full object-cover h-[500px]">
+                    <div class="absolute -bottom-6 -right-6 bg-primary text-white p-6 rounded-xl shadow-xl hidden md:block">
+                        <p class="font-serif text-3xl font-bold">10+</p>
+                        <p class="text-sm font-medium">Years Experience</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-gray-900 dark:text-white mb-6 leading-tight">Crafting Spaces with Passion</h2>
+                <p class="text-lg text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">With over 10 years of experience, ArtMural studio brings blank walls to life. We specialize in bespoke, hand-painted murals that reflect your personality and brand.</p>
+                
+                <ul class="space-y-4 mb-10">
+                    <li class="flex items-start"><i class="fas fa-check-circle text-primary mt-1 mr-3 rtl:ml-3 rtl:mr-0 text-xl"></i><span class="text-gray-700 dark:text-gray-300 font-medium">250+ Walls Transformed</span></li><li class="flex items-start"><i class="fas fa-check-circle text-primary mt-1 mr-3 rtl:ml-3 rtl:mr-0 text-xl"></i><span class="text-gray-700 dark:text-gray-300 font-medium">150+ Happy Clients</span></li><li class="flex items-start"><i class="fas fa-check-circle text-primary mt-1 mr-3 rtl:ml-3 rtl:mr-0 text-xl"></i><span class="text-gray-700 dark:text-gray-300 font-medium">Premium Materials Used</span></li>
+                </ul>
+                
+                <a href="about.html" class="inline-flex items-center justify-center bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-primary dark:hover:bg-primary hover:text-white dark:hover:text-white px-8 py-4 rounded-full font-bold transition-all shadow-lg">Learn About Us <i class="fas fa-arrow-right ml-2 rtl:mr-2 rtl:ml-0"></i></a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Sec 6: CTA -->
-    <section class="py-24 bg-[#d4a373]">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <h2 class="text-4xl font-serif font-bold text-white mb-6">Ready for your own masterpiece?</h2>
-            <p class="text-white text-lg mb-10">Schedule a free consultation with our lead artist today.</p>
-            <a href="contact.html" class="bg-white text-[#d4a373] px-10 py-4 rounded-full font-bold shadow-xl hover:shadow-2xl transition inline-block">Start Your Project</a>
+<section class="py-24 bg-gray-50 dark:bg-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-4xl md:text-5xl font-serif font-bold text-gray-900 dark:text-white mb-4">Our Services</h2>
+            <p class="text-lg text-gray-600 dark:text-gray-400">Tailored artistic solutions for every environment.</p>
         </div>
-    </section>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 dark:border-gray-800 transform hover:-translate-y-2">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1560067174-c5a3a8f37060?q=80&w=2000&auto=format&fit=crop" alt="Residential Murals" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-serif font-bold text-gray-900 dark:text-white mb-3 group-hover:text-primary transition-colors">Residential Murals</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6">Custom designs for living rooms, bedrooms, and hallways.</p>
+                    <a href="service-details.html" class="text-primary font-semibold hover:text-amber-700 flex items-center uppercase text-sm tracking-wide">Learn More <i class="fas fa-arrow-right ml-2 text-xs"></i></a>
+                </div>
+            </div>
+            
+            <div class="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 dark:border-gray-800 transform hover:-translate-y-2">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1519710168127-05740fcb7e19?q=80&w=2000&auto=format&fit=crop" alt="Kids Room Art" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-serif font-bold text-gray-900 dark:text-white mb-3 group-hover:text-primary transition-colors">Kids Room Art</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6">Playful, imaginative spaces for children of all ages.</p>
+                    <a href="service-details.html" class="text-primary font-semibold hover:text-amber-700 flex items-center uppercase text-sm tracking-wide">Learn More <i class="fas fa-arrow-right ml-2 text-xs"></i></a>
+                </div>
+            </div>
+            
+            <div class="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 dark:border-gray-800 transform hover:-translate-y-2">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2000&auto=format&fit=crop" alt="Commercial Branding" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-serif font-bold text-gray-900 dark:text-white mb-3 group-hover:text-primary transition-colors">Commercial Branding</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6">Impactful wall art for retail, restaurants, and offices.</p>
+                    <a href="service-details.html" class="text-primary font-semibold hover:text-amber-700 flex items-center uppercase text-sm tracking-wide">Learn More <i class="fas fa-arrow-right ml-2 text-xs"></i></a>
+                </div>
+            </div>
+            
+            <div class="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 dark:border-gray-800 transform hover:-translate-y-2">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1499916078039-922301b0eb9b?q=80&w=2000&auto=format&fit=crop" alt="Accent Walls" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-serif font-bold text-gray-900 dark:text-white mb-3 group-hover:text-primary transition-colors">Accent Walls</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6">Minimalist geometric or abstract patterns.</p>
+                    <a href="service-details.html" class="text-primary font-semibold hover:text-amber-700 flex items-center uppercase text-sm tracking-wide">Learn More <i class="fas fa-arrow-right ml-2 text-xs"></i></a>
+                </div>
+            </div>
+            
+            <div class="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 dark:border-gray-800 transform hover:-translate-y-2">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?q=80&w=2000&auto=format&fit=crop" alt="Exterior Murals" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-serif font-bold text-gray-900 dark:text-white mb-3 group-hover:text-primary transition-colors">Exterior Murals</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6">Durable, weather-resistant outdoor artwork.</p>
+                    <a href="service-details.html" class="text-primary font-semibold hover:text-amber-700 flex items-center uppercase text-sm tracking-wide">Learn More <i class="fas fa-arrow-right ml-2 text-xs"></i></a>
+                </div>
+            </div>
+            
+            <div class="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group border border-gray-100 dark:border-gray-800 transform hover:-translate-y-2">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?q=80&w=2000&auto=format&fit=crop" alt="Custom Illustrations" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-serif font-bold text-gray-900 dark:text-white mb-3 group-hover:text-primary transition-colors">Custom Illustrations</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6">Bespoke canvas and small-scale custom requests.</p>
+                    <a href="service-details.html" class="text-primary font-semibold hover:text-amber-700 flex items-center uppercase text-sm tracking-wide">Learn More <i class="fas fa-arrow-right ml-2 text-xs"></i></a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
 
-    </main>
-    
-<footer class="bg-[#1a1a1a] text-gray-300 pt-20 pb-10 mt-0">
-    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+<section class="py-24 bg-white dark:bg-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+            <div class="max-w-2xl">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-gray-900 dark:text-white mb-4">Featured Portfolio</h2>
+                <p class="text-lg text-gray-600 dark:text-gray-400">Explore our finest selected wall art transformations and custom murals.</p>
+            </div>
+            <a href="portfolio.html" class="inline-flex text-primary font-bold hover:text-amber-700">Explore Full Portfolio <i class="fas fa-arrow-right ml-2 mt-1"></i></a>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="filter-item group relative overflow-hidden rounded-2xl aspect-square" data-category="residential">
+                <img src="https://images.unsplash.com/photo-1560067174-c5a3a8f37060?q=80&w=2000&auto=format&fit=crop" alt="Living Room" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+                    <span class="text-primary font-bold text-sm uppercase tracking-wider mb-2">Living Room</span>
+                    <h3 class="text-white text-2xl font-serif font-bold">Modern Abstract Flow</h3>
+                </div>
+            </div>
+            <div class="filter-item group relative overflow-hidden rounded-2xl aspect-[4/5] md:row-span-2" data-category="commercial">
+                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2000&auto=format&fit=crop" alt="Office Mural" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+                    <span class="text-primary font-bold text-sm uppercase tracking-wider mb-2">Commercial</span>
+                    <h3 class="text-white text-2xl font-serif font-bold">Tech Startup Lobby</h3>
+                </div>
+            </div>
+            <div class="filter-item group relative overflow-hidden rounded-2xl aspect-square" data-category="residential">
+                <img src="https://images.unsplash.com/photo-1519710168127-05740fcb7e19?q=80&w=2000&auto=format&fit=crop" alt="Kids Room" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+                    <span class="text-primary font-bold text-sm uppercase tracking-wider mb-2">Kids Room</span>
+                    <h3 class="text-white text-2xl font-serif font-bold">Jungle Safari Theme</h3>
+                </div>
+            </div>
+            <div class="filter-item group relative overflow-hidden rounded-2xl aspect-square" data-category="commercial">
+                <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?q=80&w=2000&auto=format&fit=crop" alt="Cafe Art" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+                    <span class="text-primary font-bold text-sm uppercase tracking-wider mb-2">Restaurant</span>
+                    <h3 class="text-white text-2xl font-serif font-bold">Botanical Cafe Vibe</h3>
+                </div>
+            </div>
+            <div class="filter-item group relative overflow-hidden rounded-2xl aspect-square" data-category="residential">
+                <img src="https://images.unsplash.com/photo-1499916078039-922301b0eb9b?q=80&w=2000&auto=format&fit=crop" alt="Accent Wall" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+                    <span class="text-primary font-bold text-sm uppercase tracking-wider mb-2">Accent Wall</span>
+                    <h3 class="text-white text-2xl font-serif font-bold">Geometric Minimalist</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-24 bg-gray-900 text-white relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-1/2 h-full bg-primary/10 rounded-l-full blur-3xl transform translate-x-1/3"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-4xl md:text-5xl font-serif font-bold mb-4">Our Creative Process</h2>
+            <p class="text-lg text-gray-400">From the first brushstroke to the final reveal, our process is designed to be seamless, collaborative, and inspiring.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            
+            <div class="bg-gray-800/50 backdrop-blur border border-gray-700 p-8 rounded-2xl hover:bg-gray-800 transition-colors">
+                <div class="text-5xl font-serif font-bold text-gray-700 mb-6">01</div>
+                <h3 class="text-2xl font-bold mb-3">Consultation</h3>
+                <p class="text-gray-400">We discuss your vision, space, and style preferences.</p>
+            </div>
+            
+            <div class="bg-gray-800/50 backdrop-blur border border-gray-700 p-8 rounded-2xl hover:bg-gray-800 transition-colors">
+                <div class="text-5xl font-serif font-bold text-gray-700 mb-6">02</div>
+                <h3 class="text-2xl font-bold mb-3">Concept & Design</h3>
+                <p class="text-gray-400">Creating digital mockups and sketches for approval.</p>
+            </div>
+            
+            <div class="bg-gray-800/50 backdrop-blur border border-gray-700 p-8 rounded-2xl hover:bg-gray-800 transition-colors">
+                <div class="text-5xl font-serif font-bold text-gray-700 mb-6">03</div>
+                <h3 class="text-2xl font-bold mb-3">Preparation</h3>
+                <p class="text-gray-400">Protecting surfaces and priming the wall.</p>
+            </div>
+            
+            <div class="bg-gray-800/50 backdrop-blur border border-gray-700 p-8 rounded-2xl hover:bg-gray-800 transition-colors">
+                <div class="text-5xl font-serif font-bold text-gray-700 mb-6">04</div>
+                <h3 class="text-2xl font-bold mb-3">Final Reveal</h3>
+                <p class="text-gray-400">The actual painting and the exciting final walkthrough.</p>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<section class="py-24 bg-white dark:bg-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-4xl md:text-5xl font-serif font-bold text-gray-900 dark:text-white mb-4">Client Stories</h2>
+            <p class="text-lg text-gray-600 dark:text-gray-400">Hear from those whose spaces we've transformed.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-2xl shadow border border-gray-100 dark:border-gray-700">
+                <div class="flex text-primary mb-6 space-x-1">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="text-gray-700 dark:text-gray-300 mb-8 italic">"The mural completely transformed our living room. It feels so personal and warm. The attention to detail is incredible."</p>
+                <div class="flex items-center">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&auto=format&fit=crop" alt="Sarah Jenkins" class="w-14 h-14 rounded-full object-cover mr-4">
+                    <div>
+                        <h4 class="font-bold text-gray-900 dark:text-white">Sarah Jenkins</h4>
+                        <span class="text-sm text-gray-500 dark:text-gray-400">Homeowner</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-2xl shadow border border-gray-100 dark:border-gray-700">
+                <div class="flex text-primary mb-6 space-x-1">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="text-gray-700 dark:text-gray-300 mb-8 italic">"Our customers constantly take photos in front of the botanical wall. It gave our cafe the exact vibe we were missing."</p>
+                <div class="flex items-center">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop" alt="Michael Chen" class="w-14 h-14 rounded-full object-cover mr-4">
+                    <div>
+                        <h4 class="font-bold text-gray-900 dark:text-white">Michael Chen</h4>
+                        <span class="text-sm text-gray-500 dark:text-gray-400">Cafe Owner</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-2xl shadow border border-gray-100 dark:border-gray-700">
+                <div class="flex text-primary mb-6 space-x-1">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="text-gray-700 dark:text-gray-300 mb-8 italic">"I always recommend ArtMural to my clients. Their professionalism and artistic talent are unmatched in the industry."</p>
+                <div class="flex items-center">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&auto=format&fit=crop" alt="Emily Ross" class="w-14 h-14 rounded-full object-cover mr-4">
+                    <div>
+                        <h4 class="font-bold text-gray-900 dark:text-white">Emily Ross</h4>
+                        <span class="text-sm text-gray-500 dark:text-gray-400">Interior Designer</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<section class="py-24 bg-primary text-white text-center px-4">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-4xl md:text-6xl font-serif font-bold mb-6">Ready to Transform Your Space?</h2>
+        <p class="text-xl md:text-2xl mb-10 font-light text-amber-100">Let's create something beautiful together. Schedule a free consultation today.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="contact.html" class="bg-gray-900 hover:bg-black text-white px-10 py-4 rounded-full font-bold transition-all shadow-lg text-lg">Book a Consultation</a>
+            <a href="portfolio.html" class="bg-transparent border-2 border-white hover:bg-white hover:text-primary text-white px-10 py-4 rounded-full font-bold transition-all text-lg">View Portfolio</a>
+        </div>
+    </div>
+</section>
+
+</main>
+<footer class="bg-gray-900 text-white pt-20 pb-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
             <div>
-                <a href="index.html" class="text-3xl font-serif font-bold text-white mb-6 inline-block">Mural<span class="text-[#d4a373]">Art</span></a>
-                <p class="text-gray-400 mb-6 leading-relaxed">Elevating spaces through custom interior wall art, murals, and personalized artistic experiences.</p>
+                <h3 class="text-3xl font-serif font-bold mb-6 tracking-tight">Art<span class="text-primary">Mural</span></h3>
+                <p class="text-gray-400 mb-6 font-light leading-relaxed">Premium custom interior wall art and murals designed to transform your everyday spaces into extraordinary experiences.</p>
                 <div class="flex space-x-4">
-                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#d4a373] text-white transition"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></a>
-                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#d4a373] text-white transition"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors"><i class="fab fa-pinterest-p"></i></a>
                 </div>
             </div>
             <div>
-                <h4 class="text-white font-bold text-lg mb-6">Quick Links</h4>
+                <h4 class="text-lg font-bold mb-6 font-serif">Quick Links</h4>
                 <ul class="space-y-3">
-                    <li><a href="about.html" class="hover:text-[#d4a373] transition">Our Story</a></li>
-                    <li><a href="services.html" class="hover:text-[#d4a373] transition">Services</a></li>
-                    <li><a href="portfolio.html" class="hover:text-[#d4a373] transition">Portfolio</a></li>
-                    <li><a href="pricing.html" class="hover:text-[#d4a373] transition">Pricing</a></li>
-                    <li><a href="contact.html" class="hover:text-[#d4a373] transition">Book Consultation</a></li>
+                    <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Studio</a></li>
+                    <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Our Services</a></li>
+                    <li><a href="portfolio.html" class="text-gray-400 hover:text-white transition-colors">Portfolio Showcase</a></li>
+                    <li><a href="pricing.html" class="text-gray-400 hover:text-white transition-colors">Pricing Packages</a></li>
+                    <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Book Consultation</a></li>
                 </ul>
             </div>
             <div>
-                <h4 class="text-white font-bold text-lg mb-6">Services</h4>
+                <h4 class="text-lg font-bold mb-6 font-serif">Services</h4>
                 <ul class="space-y-3">
-                    <li><a href="service-details.html" class="hover:text-[#d4a373] transition">Residential Murals</a></li>
-                    <li><a href="service-details.html" class="hover:text-[#d4a373] transition">Commercial Artwork</a></li>
-                    <li><a href="service-details.html" class="hover:text-[#d4a373] transition">Kids Room Design</a></li>
-                    <li><a href="service-details.html" class="hover:text-[#d4a373] transition">Accent Walls</a></li>
-                    <li><a href="service-details.html" class="hover:text-[#d4a373] transition">Custom Canvases</a></li>
+                    <li><a href="service-details.html" class="text-gray-400 hover:text-white transition-colors">Home Murals</a></li>
+                    <li><a href="service-details.html" class="text-gray-400 hover:text-white transition-colors">Kids Room Art</a></li>
+                    <li><a href="service-details.html" class="text-gray-400 hover:text-white transition-colors">Commercial Spaces</a></li>
+                    <li><a href="service-details.html" class="text-gray-400 hover:text-white transition-colors">Office Branding</a></li>
+                    <li><a href="service-details.html" class="text-gray-400 hover:text-white transition-colors">Accent Walls</a></li>
                 </ul>
             </div>
             <div>
-                <h4 class="text-white font-bold text-lg mb-6">Newsletter</h4>
-                <p class="text-sm mb-4 text-gray-400">Subscribe for artistic inspiration and studio updates.</p>
-                <form class="flex">
-                    <input type="email" placeholder="Email Address" class="w-full px-4 py-3 bg-gray-800 border-none text-white rounded-l focus:outline-none focus:ring-1 focus:ring-[#d4a373]">
-                    <button type="submit" class="bg-[#d4a373] hover:bg-[#b5835a] px-4 py-3 text-white rounded-r font-medium transition">Join</button>
+                <h4 class="text-lg font-bold mb-6 font-serif">Newsletter</h4>
+                <p class="text-gray-400 mb-4 font-light">Subscribe to get the latest artwork updates and studio news.</p>
+                <form class="flex" onsubmit="event.preventDefault();">
+                    <input type="email" placeholder="Email Address" class="w-full px-4 py-3 bg-gray-800 text-white border border-gray-700 rounded-l-lg focus:outline-none focus:border-primary">
+                    <button type="submit" class="bg-primary hover:bg-amber-600 px-4 py-3 rounded-r-lg transition-colors"><i class="fas fa-paper-plane"></i></button>
                 </form>
             </div>
         </div>
-        <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-            <p>&copy; 2026 MuralArt Studio. All rights reserved.</p>
+        <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+            <p>&copy; 2026 ArtMural Studio. All rights reserved.</p>
             <div class="space-x-4 mt-4 md:mt-0">
-                <a href="404.html" class="hover:text-white transition">Privacy Policy</a>
-                <a href="coming-soon.html" class="hover:text-white transition">Terms of Service</a>
+                <a href="#" class="hover:text-white">Privacy Policy</a>
+                <a href="#" class="hover:text-white">Terms of Service</a>
             </div>
         </div>
     </div>
@@ -249,4 +475,3 @@
 <script src="js/main.js"></script>
 </body>
 </html>
-

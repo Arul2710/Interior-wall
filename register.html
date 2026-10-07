@@ -1,5 +1,4 @@
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,6 +6,7 @@
     <title>REGISTER | ArtMural Studio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
     <link rel="stylesheet" href="css/style.css">
     <script>
         tailwind.config = {
@@ -23,194 +23,98 @@
 </head>
 <body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300">
 
-<header class="fixed w-full z-50 glass-nav border-b border-gray-200 dark:border-gray-800 transition-colors duration-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-20">
-            <div class="flex-shrink-0">
-                <a href="index.html" class="no-active text-3xl font-serif font-bold text-gray-900 dark:text-white tracking-tight">Art<span class="text-primary">Mural</span></a>
-            </div>
-            
-            <nav class="hidden lg:flex items-center space-x-8">
-                <div class="relative group py-8">
-                    <a href="#" class="nav-link text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary font-medium flex items-center gap-1 transition-colors">
-                        Home <i class="fas fa-chevron-down text-[10px]"></i>
-                    </a>
-                    <div class="absolute top-full left-0 w-48 bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-b-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top -translate-y-2 group-hover:translate-y-0">
-                        <a href="index.html" class="block px-5 py-3 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-primary transition-colors">Home 1</a>
-                        <a href="home-2.html" class="block px-5 py-3 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-primary transition-colors">Home 2</a>
-                    </div>
-                </div>
-                
-                <a href="about.html" class="nav-link text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary font-medium transition-colors">About</a>
-                <a href="services.html" class="nav-link text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary font-medium transition-colors">Services</a>
-                <a href="portfolio.html" class="nav-link text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary font-medium transition-colors">Portfolio</a>
-                <a href="pricing.html" class="nav-link text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary font-medium transition-colors">Pricing</a>
-                <a href="blog.html" class="nav-link text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary font-medium transition-colors">Blog</a>
-                <a href="contact.html" class="nav-link text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary font-medium transition-colors">Contact</a>
-                
-                <div class="relative group py-8">
-                    <a href="#" class="nav-link text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary font-medium flex items-center gap-1 transition-colors">
-                        Account <i class="fas fa-chevron-down text-[10px]"></i>
-                    </a>
-                    <div class="absolute top-full right-0 w-56 bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-b-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top -translate-y-2 group-hover:translate-y-0">
-                        <div class="px-5 py-2 text-[10px] font-bold text-gray-400 uppercase tracking-wider bg-gray-50 dark:bg-gray-900/50">Admin</div>
-                        <a href="admin/dashboard.html" class="block px-5 py-2.5 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-primary">Admin Dashboard</a>
-                        <a href="admin/projects.html" class="block px-5 py-2.5 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-primary">Manage Projects</a>
-                        <a href="admin/messages.html" class="block px-5 py-2.5 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-primary">Messages</a>
-                        <a href="admin/settings.html" class="block px-5 py-2.5 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-primary">Settings</a>
-                        
-                        <div class="px-5 py-2 text-[10px] font-bold text-gray-400 uppercase tracking-wider bg-gray-50 dark:bg-gray-900/50 border-t border-gray-100 dark:border-gray-700">User</div>
-                        <a href="user/dashboard.html" class="block px-5 py-2.5 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-primary">User Dashboard</a>
-                        <a href="user/bookings.html" class="block px-5 py-2.5 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-primary">My Bookings</a>
-                        <a href="user/saved-projects.html" class="block px-5 py-2.5 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-primary">Saved Projects</a>
-                        <a href="user/profile.html" class="block px-5 py-2.5 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-primary">Profile</a>
-                    </div>
-                </div>
-
-                <div class="flex items-center space-x-3 pl-4 border-l border-gray-200 dark:border-gray-700">
-                    <button class="theme-toggle-btn text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors focus:outline-none p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800">
-                        <i class="theme-icon fas fa-moon"></i>
-                    </button>
-                    <button class="rtl-toggle-btn text-xs font-bold text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors focus:outline-none p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-800">
-                        RTL
-                    </button>
-                </div>
-            </nav>
-
-            <div class="flex items-center lg:hidden space-x-4">
-                <button class="theme-toggle-btn text-gray-500 dark:text-gray-400">
-                    <i class="theme-icon fas fa-moon text-xl"></i>
-                </button>
-                <button id="mobile-btn" class="text-gray-900 dark:text-white focus:outline-none p-2">
-                    <i class="fas fa-bars text-2xl"></i>
-                </button>
-            </div>
-        </div>
-    </div>
-</header>
-
-<div id="mobile-menu" class="fixed inset-0 z-[60] bg-white dark:bg-gray-900 transform translate-x-full transition-transform duration-300 overflow-y-auto">
-    <div class="p-6">
-        <div class="flex justify-between items-center mb-8">
-            <span class="text-2xl font-serif font-bold text-gray-900 dark:text-white">Art<span class="text-primary">Mural</span></span>
-            <button id="mobile-close" class="text-gray-500 hover:text-primary focus:outline-none">
-                <i class="fas fa-times text-2xl"></i>
-            </button>
-        </div>
-        
-        <nav class="flex flex-col space-y-4">
-            <div>
-                <button class="mobile-dropdown-toggle w-full flex justify-between items-center text-lg font-medium text-gray-900 dark:text-white py-2" data-target="mob-home">
-                    Home <i class="fas fa-chevron-down text-sm transition-transform"></i>
-                </button>
-                <div id="mob-home" class="hidden pl-4 py-2 space-y-2 border-l-2 border-gray-100 dark:border-gray-800 ml-2 mt-2">
-                    <a href="index.html" class="block text-gray-600 dark:text-gray-400 py-1">Home 1</a>
-                    <a href="home-2.html" class="block text-gray-600 dark:text-gray-400 py-1">Home 2</a>
-                </div>
-            </div>
-            <a href="about.html" class="text-lg font-medium text-gray-900 dark:text-white py-2">About</a>
-            <a href="services.html" class="text-lg font-medium text-gray-900 dark:text-white py-2">Services</a>
-            <a href="portfolio.html" class="text-lg font-medium text-gray-900 dark:text-white py-2">Portfolio</a>
-            <a href="pricing.html" class="text-lg font-medium text-gray-900 dark:text-white py-2">Pricing</a>
-            <a href="blog.html" class="text-lg font-medium text-gray-900 dark:text-white py-2">Blog</a>
-            <a href="contact.html" class="text-lg font-medium text-gray-900 dark:text-white py-2">Contact</a>
-            
-            <div>
-                <button class="mobile-dropdown-toggle w-full flex justify-between items-center text-lg font-medium text-gray-900 dark:text-white py-2" data-target="mob-account">
-                    Account <i class="fas fa-chevron-down text-sm transition-transform"></i>
-                </button>
-                <div id="mob-account" class="hidden pl-4 py-2 space-y-4 border-l-2 border-gray-100 dark:border-gray-800 ml-2 mt-2">
-                    <div>
-                        <div class="text-xs font-bold text-gray-400 uppercase mb-2">Admin</div>
-                        <a href="admin/dashboard.html" class="block text-gray-600 dark:text-gray-400 py-1">Admin Dashboard</a>
-                        <a href="admin/projects.html" class="block text-gray-600 dark:text-gray-400 py-1">Manage Projects</a>
-                        <a href="admin/messages.html" class="block text-gray-600 dark:text-gray-400 py-1">Messages</a>
-                        <a href="admin/settings.html" class="block text-gray-600 dark:text-gray-400 py-1">Settings</a>
-                    </div>
-                    <div>
-                        <div class="text-xs font-bold text-gray-400 uppercase mb-2">User</div>
-                        <a href="user/dashboard.html" class="block text-gray-600 dark:text-gray-400 py-1">User Dashboard</a>
-                        <a href="user/bookings.html" class="block text-gray-600 dark:text-gray-400 py-1">My Bookings</a>
-                        <a href="user/saved-projects.html" class="block text-gray-600 dark:text-gray-400 py-1">Saved Projects</a>
-                        <a href="user/profile.html" class="block text-gray-600 dark:text-gray-400 py-1">Profile</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="pt-6 border-t border-gray-200 dark:border-gray-800 flex justify-between items-center">
-                <button class="rtl-toggle-btn text-sm font-bold text-gray-600 dark:text-gray-400 py-2">Toggle RTL Direction</button>
-            </div>
-        </nav>
-    </div>
+<div class="fixed top-5 right-5 z-50 flex items-center gap-2">
+    <button class="theme-toggle-btn w-11 h-11 rounded-full bg-white dark:bg-gray-800 shadow-lg border border-gray-200 dark:border-gray-700 text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-all hover:scale-105 focus:outline-none flex items-center justify-center">
+        <i class="theme-icon fas fa-moon text-lg"></i>
+    </button>
+    <button class="rtl-toggle-btn w-11 h-11 rounded-full bg-white dark:bg-gray-800 shadow-lg border border-gray-200 dark:border-gray-700 text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-all hover:scale-105 focus:outline-none flex items-center justify-center text-sm font-bold">
+        RTL
+    </button>
 </div>
-<main class="pt-20">
 
-<section class="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-900 px-4 py-24">
-    <div class="max-w-md w-full bg-white dark:bg-gray-800 p-10 rounded-3xl shadow-2xl text-center border border-gray-100 dark:border-gray-700">
-        
-    <h2 class="text-3xl font-serif font-bold mb-2 text-gray-900 dark:text-white">Create Account</h2>
-    <form class="space-y-4 text-left" onsubmit="event.preventDefault(); window.location.href='login.html'">
-        <div><label class="block text-sm text-gray-700 dark:text-gray-300 mb-1">Name</label><input type="text" class="w-full bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg px-4 py-2"></div>
-        <div><label class="block text-sm text-gray-700 dark:text-gray-300 mb-1">Email</label><input type="email" class="w-full bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg px-4 py-2"></div>
-        <div><label class="block text-sm text-gray-700 dark:text-gray-300 mb-1">Password</label><input type="password" class="w-full bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg px-4 py-2"></div>
-        <button type="submit" class="w-full bg-primary text-white font-bold py-3 rounded-xl">Register</button>
-    </form>
-    <p class="mt-6 text-gray-600 text-sm">Already have an account? <a href="login.html" class="text-primary font-bold">Login</a></p>
+<main>
+<section class="min-h-screen relative flex items-center justify-center overflow-hidden px-4 py-16">
+    <div class="absolute inset-0 bg-gradient-to-br from-amber-100 via-white to-gray-100 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800"></div>
+    <div class="absolute -top-32 -right-32 w-96 h-96 bg-primary/20 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-32 -left-32 w-96 h-96 bg-amber-300/20 rounded-full blur-3xl"></div>
 
+    <div class="relative max-w-md w-full">
+        <div class="absolute inset-0 bg-primary rounded-3xl transform rotate-3 opacity-20"></div>
+        <div class="relative bg-white dark:bg-gray-800 p-8 sm:p-10 rounded-3xl shadow-2xl border border-gray-100 dark:border-gray-700">
+            <div class="text-center mb-8">
+                <a href="index.html" class="flex items-center justify-center gap-3 mb-5">
+                    <img src="images/logo.svg" alt="ArtMural" class="h-16 w-16 rounded-2xl shadow-lg shadow-primary/20">
+                    <span class="text-4xl font-serif font-bold text-gray-900 dark:text-white tracking-tight">Art<span class="text-primary">Mural</span></span>
+                </a>
+                <h2 class="text-3xl font-serif font-bold text-gray-900 dark:text-white">Create Account</h2>
+                <p class="mt-2 text-gray-500 dark:text-gray-400 text-sm">Join us and transform your walls into art</p>
+            </div>
+
+            <form class="space-y-5" onsubmit="event.preventDefault(); window.location.href='login.html'">
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Full Name</label>
+                    <div class="relative">
+                        <i class="fas fa-user absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 text-sm"></i>
+                        <input type="text" required placeholder="John Doe" class="w-full bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl pl-11 pr-4 py-3.5 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all placeholder:text-gray-400 dark:placeholder:text-gray-500">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Email Address</label>
+                    <div class="relative">
+                        <i class="fas fa-envelope absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 text-sm"></i>
+                        <input type="email" required placeholder="you@example.com" class="w-full bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl pl-11 pr-4 py-3.5 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all placeholder:text-gray-400 dark:placeholder:text-gray-500">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Password</label>
+                    <div class="relative">
+                        <i class="fas fa-lock absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 text-sm"></i>
+                        <input type="password" required placeholder="Create a password" class="w-full bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl pl-11 pr-12 py-3.5 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all placeholder:text-gray-400 dark:placeholder:text-gray-500">
+                        <button type="button" class="password-toggle absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-primary transition-colors focus:outline-none">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Confirm Password</label>
+                    <div class="relative">
+                        <i class="fas fa-lock absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 text-sm"></i>
+                        <input type="password" required placeholder="Confirm your password" class="w-full bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl pl-11 pr-12 py-3.5 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all placeholder:text-gray-400 dark:placeholder:text-gray-500">
+                        <button type="button" class="password-toggle absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-primary transition-colors focus:outline-none">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                <label class="flex items-start text-sm text-gray-600 dark:text-gray-400 cursor-pointer">
+                    <input type="checkbox" required class="mt-0.5 mr-2 accent-primary w-4 h-4"> I agree to the <a href="#" class="text-primary hover:underline">Terms of Service</a> and <a href="#" class="text-primary hover:underline">Privacy Policy</a>
+                </label>
+                <button type="submit" class="w-full bg-gradient-to-r from-primary to-amber-500 text-white font-bold py-3.5 rounded-xl transition-all shadow-lg shadow-primary/30 hover:shadow-primary/40 hover:-translate-y-0.5 active:translate-y-0">Create Account</button>
+            </form>
+
+            <p class="text-center text-gray-500 dark:text-gray-400 text-sm">Already have an account? <a href="login.html" class="text-primary font-bold hover:underline">Sign In</a></p>
+        </div>
     </div>
 </section>
 
 </main>
-<footer class="bg-gray-900 text-white pt-20 pb-10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-            <div>
-                <h3 class="text-3xl font-serif font-bold mb-6 tracking-tight">Art<span class="text-primary">Mural</span></h3>
-                <p class="text-gray-400 mb-6 font-light leading-relaxed">Premium custom interior wall art and murals designed to transform your everyday spaces into extraordinary experiences.</p>
-                <div class="flex space-x-4">
-                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors"><i class="fab fa-pinterest-p"></i></a>
-                </div>
-            </div>
-            <div>
-                <h4 class="text-lg font-bold mb-6 font-serif">Quick Links</h4>
-                <ul class="space-y-3">
-                    <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Studio</a></li>
-                    <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Our Services</a></li>
-                    <li><a href="portfolio.html" class="text-gray-400 hover:text-white transition-colors">Portfolio Showcase</a></li>
-                    <li><a href="pricing.html" class="text-gray-400 hover:text-white transition-colors">Pricing Packages</a></li>
-                    <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Book Consultation</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="text-lg font-bold mb-6 font-serif">Services</h4>
-                <ul class="space-y-3">
-                    <li><a href="service-details.html" class="text-gray-400 hover:text-white transition-colors">Home Murals</a></li>
-                    <li><a href="service-details.html" class="text-gray-400 hover:text-white transition-colors">Kids Room Art</a></li>
-                    <li><a href="service-details.html" class="text-gray-400 hover:text-white transition-colors">Commercial Spaces</a></li>
-                    <li><a href="service-details.html" class="text-gray-400 hover:text-white transition-colors">Office Branding</a></li>
-                    <li><a href="service-details.html" class="text-gray-400 hover:text-white transition-colors">Accent Walls</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="text-lg font-bold mb-6 font-serif">Newsletter</h4>
-                <p class="text-gray-400 mb-4 font-light">Subscribe to get the latest artwork updates and studio news.</p>
-                <form class="flex" onsubmit="event.preventDefault();">
-                    <input type="email" placeholder="Email Address" class="w-full px-4 py-3 bg-gray-800 text-white border border-gray-700 rounded-l-lg focus:outline-none focus:border-primary">
-                    <button type="submit" class="bg-primary hover:bg-amber-600 px-4 py-3 rounded-r-lg transition-colors"><i class="fas fa-paper-plane"></i></button>
-                </form>
-            </div>
-        </div>
-        <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
-            <p>&copy; 2026 ArtMural Studio. All rights reserved.</p>
-            <div class="space-x-4 mt-4 md:mt-0">
-                <a href="#" class="hover:text-white">Privacy Policy</a>
-                <a href="#" class="hover:text-white">Terms of Service</a>
-            </div>
-        </div>
-    </div>
-</footer>
+
+<script>
+    document.querySelectorAll('.password-toggle').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            var input = btn.parentElement.querySelector('input');
+            var icon = btn.querySelector('i');
+            if (input.type === 'password') {
+                input.type = 'text';
+                icon.classList.remove('fa-eye');
+                icon.classList.add('fa-eye-slash');
+            } else {
+                input.type = 'password';
+                icon.classList.remove('fa-eye-slash');
+                icon.classList.add('fa-eye');
+            }
+        });
+    });
+</script>
 <script src="js/main.js"></script>
 </body>
 </html>

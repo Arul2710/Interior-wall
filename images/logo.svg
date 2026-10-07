@@ -1,0 +1,14 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="512" height="512" rx="48" fill="#ffffff"/>
+  <!-- Accent shape -->
+  <path d="M96 96h320v80l-80 48 80 48v144H96V272l80-48-80-48V96z" fill="#d97706" opacity="0.9"/>
+  <!-- Inner -->
+  <path d="M128 128h256v48l-64 40 64 40v128H128V256l64-40-64-40v-48z" fill="#111827"/>
+  <!-- Monogram -->
+  <g fill="#ffffff">
+    <rect x="192" y="200" width="32" height="112"/>
+    <rect x="240" y="200" width="32" height="72"/>
+    <rect x="288" y="200" width="32" height="112"/>
+  </g>
+</svg>

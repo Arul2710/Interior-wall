@@ -1,15 +1,17 @@
-﻿
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BLOG | ArtMural Studio</title>
+    <title>Blog | Mural Ideas & Interior Wall Art Inspiration</title>
+    <meta name="description" content="Ideas, guides and inspiration for interior wall art and custom murals from the ArtMural Studio team.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/svg+xml" href="images/logo.svg">
     <link rel="stylesheet" href="css/style.css">
     <script>
+        document.documentElement.classList.add('js');
         tailwind.config = {
             darkMode: 'class',
             theme: { extend: { colors: { primary: '#d97706', dark: '#111827' } } }
@@ -31,7 +33,7 @@
                 <a href="index.html" class="no-active flex items-center gap-3 text-3xl font-serif font-bold text-gray-900 dark:text-white tracking-tight"><img src="images/logo.svg?v=2" alt="ArtMural" class="h-12 w-auto">Art<span class="text-primary">Mural</span></a>
             </div>
             
-            <nav class="hidden xl:flex items-center space-x-8">
+            <nav class="hidden xl:flex items-center space-x-6">
                 <div class="relative group py-8">
                     <a href="#" class="nav-link text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary font-medium flex items-center gap-1 transition-colors">
                         Home <i class="fas fa-chevron-down text-[10px]"></i>
@@ -52,14 +54,15 @@
                 
 
                                 <div class="flex items-center space-x-3 pl-4 border-l border-gray-200 dark:border-gray-700">
-                    <button class="theme-toggle-btn text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors focus:outline-none p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800">
+                    <button aria-label="Toggle dark mode" class="theme-toggle-btn text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors focus:outline-none p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800">
                         <i class="theme-icon fas fa-moon"></i>
                     </button>
-                    <button class="rtl-toggle-btn text-xs font-bold text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors focus:outline-none p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-800">
+                    <button aria-label="Toggle right-to-left layout" class="rtl-toggle-btn text-xs font-bold text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors focus:outline-none p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-800">
                         RTL
                     </button>
                 </div>
-                <a href="login.html" class="px-5 py-2.5 rounded-full bg-primary text-white hover:bg-primary/90 transition-colors font-medium text-sm shadow-sm">Login</a>
+                <a href="login.html" class="px-4 py-2.5 rounded-full border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-200 hover:border-primary hover:text-primary transition-colors font-medium text-sm">Login</a>
+                <a href="contact.html#booking" class="px-5 py-2.5 rounded-full bg-primary text-white hover:bg-amber-600 transition-colors font-semibold text-sm shadow-sm inline-flex items-center gap-2"><i class="fas fa-calendar-check"></i> Book Now</a>
             </nav>
 
             <div class="flex items-center xl:hidden space-x-4">
@@ -103,34 +106,41 @@
             </div>
             
             <div class="pt-6 border-t border-gray-200 dark:border-gray-800 flex items-center gap-3">
-    <button class="theme-toggle-btn flex-1 flex items-center justify-center py-3 rounded-xl border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-all">
+    <button aria-label="Toggle dark mode" class="theme-toggle-btn flex-1 flex items-center justify-center py-3 rounded-xl border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-all">
         <i class="theme-icon fas fa-moon text-xl"></i>
     </button>
-    <button class="rtl-toggle-btn flex-1 flex items-center justify-center gap-2 py-3 rounded-xl border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-all text-sm font-bold">
+    <button aria-label="Toggle right-to-left layout" class="rtl-toggle-btn flex-1 flex items-center justify-center gap-2 py-3 rounded-xl border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-all text-sm font-bold">
         RTL
     </button>
 </div>
-<a href="login.html" class="w-full block text-center bg-primary text-white font-bold py-3 rounded-xl transition-all mt-3">Login</a>
+<a href="contact.html#booking" class="w-full flex items-center justify-center gap-2 bg-primary text-white font-bold py-3 rounded-xl transition-all mt-3"><i class="fas fa-calendar-check"></i> Book Now</a>
+<a href="login.html" class="w-full block text-center border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-200 font-semibold py-3 rounded-xl transition-all mt-2">Login</a>
         </nav>
     </div>
 </div>
 <main class="pt-20">
 
-<section class="relative min-h-[60vh] flex items-center justify-center text-center px-4 py-20 overflow-hidden">
-    <div class="absolute inset-0 bg-cover bg-center transform scale-105 transition-transform duration-1000" style="background-image: url('images/Creativity First.jpg');"></div>
-    <div class="absolute inset-0 bg-gradient-to-b from-gray-900/80 via-gray-900/60 to-gray-900/90 dark:from-gray-900/90 dark:to-gray-900/95"></div>
-    <div class="relative z-10 max-w-5xl mx-auto text-white">
-        <h1 class="text-5xl md:text-7xl lg:text-8xl font-serif font-bold mb-6 leading-tight drop-shadow-lg">Art & Design Journal</h1>
-        <p class="text-xl md:text-2xl mb-12 font-light max-w-3xl mx-auto text-gray-200">Insights, trends, and stories from the studio.</p>
-        <div class="flex flex-col sm:flex-row gap-5 justify-center">
-            <a href="#latest" class="bg-primary hover:bg-amber-600 text-white px-10 py-4 rounded-full font-semibold transition-all shadow-lg hover:shadow-primary/30 transform hover:-translate-y-1">Read Latest</a>
-            
+<section class="relative min-h-[70vh] pt-32 pb-24 flex items-center justify-center text-center px-4 overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center hero-bg" style="background-image: url('images/Creativity First.jpg');"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-gray-900/80 via-gray-900/65 to-gray-900/90 dark:from-gray-900/90 dark:via-gray-900/80 dark:to-gray-950/95"></div>
+    <div class="relative z-10 max-w-4xl mx-auto text-white reveal">
+        <span class="hero-badge mb-6"><i class="fas fa-star text-primary"></i> Custom Murals &amp; Interior Wall Art</span>
+        <h1 class="hero-heading text-4xl sm:text-5xl lg:text-6xl font-serif font-bold mb-6 leading-[1.1] drop-shadow-lg">Art & Design Journal</h1>
+        <p class="text-lg md:text-xl mb-9 font-light max-w-2xl mx-auto text-gray-200">Insights, trends, and stories from the studio.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#latest" class="btn btn-primary">Read Latest</a>
+            <a href="contact.html#booking" class="btn btn-outline-light">Book a Consultation</a>
+        </div>
+        <div class="mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-gray-300">
+            <span class="inline-flex items-center gap-2"><i class="fas fa-check-circle text-primary"></i> Free consultation</span>
+            <span class="inline-flex items-center gap-2"><i class="fas fa-check-circle text-primary"></i> 250+ walls transformed</span>
+            <span class="inline-flex items-center gap-2"><i class="fas fa-check-circle text-primary"></i> Residential &amp; commercial</span>
         </div>
     </div>
 </section>
 <section id="latest" class="py-24 bg-white dark:bg-gray-900"><div class="max-w-7xl mx-auto px-4"><div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div class="md:col-span-2 bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden shadow flex flex-col">
-            <img src="images/Geometric Minimalist.jpg" class="w-full h-96 object-cover">
+            <img src="images/Geometric Minimalist.jpg" alt="Geometric minimalist mural covering a large interior wall" class="w-full h-96 object-cover">
             <div class="p-8 flex-1 flex flex-col">
                 <span class="text-primary font-bold text-sm uppercase">Trends</span>
                 <h3 class="text-3xl font-serif font-bold my-4">Top 5 Mural Trends for 2026</h3>
@@ -196,16 +206,89 @@
     </div>
 </section>
 
-<section class="py-24 bg-primary text-white text-center px-4">
-    <div class="max-w-4xl mx-auto">
-        <h2 class="text-4xl md:text-6xl font-serif font-bold mb-6">Ready to Transform Your Space?</h2>
-        <p class="text-xl md:text-2xl mb-10 font-light text-amber-100">Let's create something beautiful together. Schedule a free consultation today.</p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="contact.html" class="bg-gray-900 hover:bg-black text-white px-10 py-4 rounded-full font-bold transition-all shadow-lg text-lg">Book a Consultation</a>
-            <a href="portfolio.html" class="bg-transparent border-2 border-white hover:bg-white hover:text-primary text-white px-10 py-4 rounded-full font-bold transition-all text-lg">View Portfolio</a>
+
+<section id="book" class="relative py-24 bg-gray-900 text-white overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center opacity-[0.14]" style="background-image: url('images/The Artist Studio.jpg');"></div>
+    <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-900/95 to-gray-950/85"></div>
+    <div class="absolute -top-32 -right-24 w-[26rem] h-[26rem] bg-primary/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-32 -left-24 w-[26rem] h-[26rem] bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
+            <div class="reveal">
+                <span class="section-eyebrow">From the Studio</span>
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-serif font-bold mt-5 mb-6 leading-tight">Inspired? Let's Put It on Your Wall</h2>
+                <p class="text-lg text-gray-300 leading-relaxed mb-8">Turn the ideas you read about into a finished mural. Share your favourite article and we will build a concept around it.</p>
+                <div class="flex flex-col sm:flex-row gap-4 mb-10">
+                    <a href="contact.html#booking" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Book an Artist</a>
+                    <a href="portfolio.html" class="btn btn-outline-light">Explore Designs</a>
+                </div>
+                <div class="grid grid-cols-3 gap-6 pt-8 border-t border-white/10">
+                    <div><div class="text-2xl sm:text-3xl font-serif font-bold text-primary">250+</div><div class="text-xs sm:text-sm text-gray-400 mt-1">Walls transformed</div></div>
+                    <div><div class="text-2xl sm:text-3xl font-serif font-bold text-primary">10+ yrs</div><div class="text-xs sm:text-sm text-gray-400 mt-1">Studio experience</div></div>
+                    <div><div class="text-2xl sm:text-3xl font-serif font-bold text-primary">100%</div><div class="text-xs sm:text-sm text-gray-400 mt-1">Premium materials</div></div>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                
+                    <div class="media-tile reveal">
+                        <img src="images/accent-wall.jpg" alt="Accent Wall" class="w-full h-40 sm:h-48 object-cover" loading="lazy">
+                        <span class="absolute bottom-3 left-3 text-[11px] font-semibold uppercase tracking-wider bg-gray-900/70 text-white px-3 py-1 rounded-full backdrop-blur">Accent Wall</span>
+                    </div>
+                    <div class="media-tile reveal">
+                        <img src="images/Botanical Cafe Vibe.jpg" alt="Botanical" class="w-full h-40 sm:h-48 object-cover" loading="lazy">
+                        <span class="absolute bottom-3 left-3 text-[11px] font-semibold uppercase tracking-wider bg-gray-900/70 text-white px-3 py-1 rounded-full backdrop-blur">Botanical</span>
+                    </div>
+                    <div class="media-tile reveal">
+                        <img src="images/Terrazzo Lounge.jpg" alt="Lounge" class="w-full h-40 sm:h-48 object-cover" loading="lazy">
+                        <span class="absolute bottom-3 left-3 text-[11px] font-semibold uppercase tracking-wider bg-gray-900/70 text-white px-3 py-1 rounded-full backdrop-blur">Lounge</span>
+                    </div>
+                    <div class="media-tile reveal">
+                        <img src="images/Custom Illustrations.jpg" alt="Illustration" class="w-full h-40 sm:h-48 object-cover" loading="lazy">
+                        <span class="absolute bottom-3 left-3 text-[11px] font-semibold uppercase tracking-wider bg-gray-900/70 text-white px-3 py-1 rounded-full backdrop-blur">Illustration</span>
+                    </div>
+            </div>
+        </div>
+
+        <div class="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            
+                <a href="portfolio.html" class="group block rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur card-lift hover:bg-white/10">
+                    <div class="w-12 h-12 rounded-xl bg-primary/15 text-primary flex items-center justify-center text-xl mb-4"><i class="fas fa-palette"></i></div>
+                    <h3 class="font-bold text-white mb-1.5">Explore Designs</h3>
+                    <p class="text-sm text-gray-400 mb-4">Browse 250+ completed murals by space, style and palette.</p>
+                    <span class="text-primary text-sm font-semibold inline-flex items-center gap-2">View gallery <i class="fas fa-arrow-right text-xs transition-transform group-hover:translate-x-1"></i></span>
+                </a>
+                <a href="contact.html#booking" class="group block rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur card-lift hover:bg-white/10">
+                    <div class="w-12 h-12 rounded-xl bg-primary/15 text-primary flex items-center justify-center text-xl mb-4"><i class="fas fa-pen-ruler"></i></div>
+                    <h3 class="font-bold text-white mb-1.5">Request Custom Artwork</h3>
+                    <p class="text-sm text-gray-400 mb-4">Share your brief and receive a tailored concept and quote.</p>
+                    <span class="text-primary text-sm font-semibold inline-flex items-center gap-2">Start a brief <i class="fas fa-arrow-right text-xs transition-transform group-hover:translate-x-1"></i></span>
+                </a>
+                <a href="contact.html#availability" class="group block rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur card-lift hover:bg-white/10">
+                    <div class="w-12 h-12 rounded-xl bg-primary/15 text-primary flex items-center justify-center text-xl mb-4"><i class="fas fa-calendar-check"></i></div>
+                    <h3 class="font-bold text-white mb-1.5">Check Availability</h3>
+                    <p class="text-sm text-gray-400 mb-4">See open studio slots and travel dates for your area.</p>
+                    <span class="text-primary text-sm font-semibold inline-flex items-center gap-2">Check dates <i class="fas fa-arrow-right text-xs transition-transform group-hover:translate-x-1"></i></span>
+                </a>
+                <a href="contact.html#booking" class="group block rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur card-lift hover:bg-white/10">
+                    <div class="w-12 h-12 rounded-xl bg-primary/15 text-primary flex items-center justify-center text-xl mb-4"><i class="fas fa-user-tie"></i></div>
+                    <h3 class="font-bold text-white mb-1.5">Book an Artist</h3>
+                    <p class="text-sm text-gray-400 mb-4">Lock in your project date with a free consultation.</p>
+                    <span class="text-primary text-sm font-semibold inline-flex items-center gap-2">Book now <i class="fas fa-arrow-right text-xs transition-transform group-hover:translate-x-1"></i></span>
+                </a>
+        </div>
+
+        <div class="mt-12 flex flex-col lg:flex-row items-center justify-between gap-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur px-6 py-6">
+            <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-gray-300">
+                <a href="tel:+15551234567" class="inline-flex items-center gap-2 hover:text-primary transition-colors"><i class="fas fa-phone-alt text-primary"></i> +1 (555) 123-4567</a>
+                <a href="mailto:hello@artmural.studio" class="inline-flex items-center gap-2 hover:text-primary transition-colors"><i class="fas fa-envelope text-primary"></i> hello@artmural.studio</a>
+                <span class="inline-flex items-center gap-2"><i class="fas fa-clock text-primary"></i> Mon&ndash;Fri, 9am&ndash;6pm</span>
+            </div>
+            <a href="contact.html#booking" class="btn btn-primary whitespace-nowrap">Book an Artist</a>
         </div>
     </div>
 </section>
+
 
 </main>
 <footer class="relative bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white pt-20 pb-10 overflow-hidden transition-colors duration-300">
@@ -222,11 +305,13 @@
                     <a href="#" aria-label="Instagram" class="w-10 h-10 rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 flex items-center justify-center shadow-sm hover:bg-primary hover:text-white hover:border-primary hover:shadow-primary/30 transition-all"><i class="fab fa-instagram"></i></a>
                     <a href="#" aria-label="Pinterest" class="w-10 h-10 rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 flex items-center justify-center shadow-sm hover:bg-primary hover:text-white hover:border-primary hover:shadow-primary/30 transition-all"><i class="fab fa-pinterest-p"></i></a>
                 </div>
+                <a href="contact.html#booking" class="btn btn-primary mt-6 text-sm"><i class="fas fa-calendar-check"></i> Book a Consultation</a>
             </div>
             <div>
                 <h4 class="text-lg font-bold mb-6 font-serif text-gray-900 dark:text-white relative pb-3 after:absolute after:left-0 after:bottom-0 after:w-10 after:h-0.5 after:bg-primary after:rounded-full">Quick Links</h4>
                 <ul class="space-y-3">
                     <li><a href="about.html" class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">About Studio</a></li>
+                    <li><a href="contact.html#locations" class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">Service Locations</a></li>
                     <li><a href="services.html" class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">Our Services</a></li>
                     <li><a href="portfolio.html" class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">Portfolio Showcase</a></li>
                     <li><a href="pricing.html" class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">Pricing Packages</a></li>
@@ -246,9 +331,12 @@
             <div>
                 <h4 class="text-lg font-bold mb-6 font-serif text-gray-900 dark:text-white relative pb-3 after:absolute after:left-0 after:bottom-0 after:w-10 after:h-0.5 after:bg-primary after:rounded-full">Newsletter</h4>
                 <p class="text-gray-600 dark:text-gray-400 mb-4 font-light">Subscribe to get the latest artwork updates and studio news.</p>
-                <form class="flex" onsubmit="event.preventDefault();">
-                    <input type="email" placeholder="Email Address" aria-label="Email Address" class="w-full px-4 py-3 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-400 border border-gray-200 dark:border-gray-700 rounded-l-lg focus:outline-none focus:border-primary transition-colors">
-                    <button type="submit" aria-label="Subscribe" class="bg-primary hover:bg-amber-600 text-white px-4 py-3 rounded-r-lg transition-colors shadow-sm"><i class="fas fa-paper-plane"></i></button>
+                <form class="js-demo-form" novalidate data-success-message="Demo only — the newsletter is not connected to a mailing service yet, so your address was not saved. Email hello@artmural.studio to join our list.">
+                    <div class="flex">
+                        <input type="email" name="email" required placeholder="Email Address" aria-label="Email Address" class="w-full px-4 py-3 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-400 border border-gray-200 dark:border-gray-700 rounded-l-lg focus:outline-none focus:border-primary transition-colors">
+                        <button type="submit" aria-label="Subscribe" class="bg-primary hover:bg-amber-600 text-white px-4 py-3 rounded-r-lg transition-colors shadow-sm"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                    <div class="form-status hidden mt-3 text-sm" role="status" aria-live="polite"></div>
                 </form>
             </div>
         </div>

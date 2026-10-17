@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REGISTER | ArtMural Studio</title>
+    <title>Create Account | ArtMural Studio</title>
+    <meta name="description" content="Create an ArtMural Studio account to save mural ideas, manage quotes and book your custom wall art project.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/svg+xml" href="images/logo.svg">
@@ -24,10 +25,10 @@
 <body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300">
 
 <div class="fixed top-5 right-5 z-50 flex items-center gap-2">
-    <button class="theme-toggle-btn w-11 h-11 rounded-full bg-white dark:bg-gray-800 shadow-lg border border-gray-200 dark:border-gray-700 text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-all hover:scale-105 focus:outline-none flex items-center justify-center">
+    <button aria-label="Toggle dark mode" class="theme-toggle-btn w-11 h-11 rounded-full bg-white dark:bg-gray-800 shadow-lg border border-gray-200 dark:border-gray-700 text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-all hover:scale-105 focus:outline-none flex items-center justify-center">
         <i class="theme-icon fas fa-moon text-lg"></i>
     </button>
-    <button class="rtl-toggle-btn w-11 h-11 rounded-full bg-white dark:bg-gray-800 shadow-lg border border-gray-200 dark:border-gray-700 text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-all hover:scale-105 focus:outline-none flex items-center justify-center text-sm font-bold">
+    <button aria-label="Toggle right-to-left layout" class="rtl-toggle-btn w-11 h-11 rounded-full bg-white dark:bg-gray-800 shadow-lg border border-gray-200 dark:border-gray-700 text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-all hover:scale-105 focus:outline-none flex items-center justify-center text-sm font-bold">
         RTL
     </button>
 </div>
@@ -46,52 +47,62 @@
                     <img src="images/logo.svg" alt="ArtMural" class="h-16 w-16 rounded-2xl shadow-lg shadow-primary/20">
                     <span class="text-4xl font-serif font-bold text-gray-900 dark:text-white tracking-tight">Art<span class="text-primary">Mural</span></span>
                 </a>
-                <h2 class="text-3xl font-serif font-bold text-gray-900 dark:text-white">Create Account</h2>
+                <h1 class="text-3xl font-serif font-bold text-gray-900 dark:text-white">Create Account</h1>
                 <p class="mt-2 text-gray-500 dark:text-gray-400 text-sm">Join us and transform your walls into art</p>
             </div>
 
-            <form class="space-y-5" onsubmit="event.preventDefault(); window.location.href='login.html'">
+            <form class="space-y-5 js-demo-form" novalidate data-success-message="Demo only — account creation is not connected to a backend, so no account was created. In production this would sign you in and open your project dashboard. To book a mural instead, use the booking form on our contact page.">
+                <div class="form-status hidden" role="status" aria-live="polite"></div>
                 <div>
-                    <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Full Name</label>
+                    <label for="reg-name" class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Full Name</label>
                     <div class="relative">
                         <i class="fas fa-user absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 text-sm"></i>
-                        <input type="text" required placeholder="John Doe" class="w-full bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl pl-11 pr-4 py-3.5 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all placeholder:text-gray-400 dark:placeholder:text-gray-500">
+                        <input id="reg-name" name="name" type="text" required autocomplete="name" placeholder="John Doe" class="w-full bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl pl-11 pr-4 py-3.5 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all placeholder:text-gray-400 dark:placeholder:text-gray-500">
                     </div>
+                    <p class="form-error hidden"></p>
                 </div>
                 <div>
-                    <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Email Address</label>
+                    <label for="reg-email" class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Email Address</label>
                     <div class="relative">
                         <i class="fas fa-envelope absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 text-sm"></i>
-                        <input type="email" required placeholder="you@example.com" class="w-full bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl pl-11 pr-4 py-3.5 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all placeholder:text-gray-400 dark:placeholder:text-gray-500">
+                        <input id="reg-email" name="email" type="email" required autocomplete="email" placeholder="you@example.com" class="w-full bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl pl-11 pr-4 py-3.5 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all placeholder:text-gray-400 dark:placeholder:text-gray-500">
                     </div>
+                    <p class="form-error hidden"></p>
                 </div>
                 <div>
-                    <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Password</label>
+                    <label for="reg-password" class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Password</label>
                     <div class="relative">
                         <i class="fas fa-lock absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 text-sm"></i>
-                        <input type="password" required placeholder="Create a password" class="w-full bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl pl-11 pr-12 py-3.5 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all placeholder:text-gray-400 dark:placeholder:text-gray-500">
-                        <button type="button" class="password-toggle absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-primary transition-colors focus:outline-none">
+                        <input id="reg-password" name="password" type="password" required autocomplete="new-password" minlength="8" placeholder="Create a password" class="w-full bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl pl-11 pr-12 py-3.5 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all placeholder:text-gray-400 dark:placeholder:text-gray-500">
+                        <button type="button" aria-label="Show or hide password" class="password-toggle absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-primary transition-colors focus:outline-none">
                             <i class="fas fa-eye"></i>
                         </button>
                     </div>
+                    <p class="form-error hidden"></p>
                 </div>
                 <div>
-                    <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Confirm Password</label>
+                    <label for="reg-confirm" class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Confirm Password</label>
                     <div class="relative">
                         <i class="fas fa-lock absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 text-sm"></i>
-                        <input type="password" required placeholder="Confirm your password" class="w-full bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl pl-11 pr-12 py-3.5 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all placeholder:text-gray-400 dark:placeholder:text-gray-500">
-                        <button type="button" class="password-toggle absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-primary transition-colors focus:outline-none">
+                        <input id="reg-confirm" name="confirm" type="password" required autocomplete="new-password" data-match="password" placeholder="Confirm your password" class="w-full bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl pl-11 pr-12 py-3.5 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all placeholder:text-gray-400 dark:placeholder:text-gray-500">
+                        <button type="button" aria-label="Show or hide password" class="password-toggle absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-primary transition-colors focus:outline-none">
                             <i class="fas fa-eye"></i>
                         </button>
                     </div>
+                    <p class="form-error hidden"></p>
                 </div>
-                <label class="flex items-start text-sm text-gray-600 dark:text-gray-400 cursor-pointer">
-                    <input type="checkbox" required class="mt-0.5 mr-2 accent-primary w-4 h-4"> I agree to the <a href="#" class="text-primary hover:underline">Terms of Service</a> and <a href="#" class="text-primary hover:underline">Privacy Policy</a>
-                </label>
+                <div>
+                    <label class="flex items-start text-sm text-gray-600 dark:text-gray-400 cursor-pointer">
+                        <input type="checkbox" name="terms" required class="mt-0.5 mr-2 accent-primary w-4 h-4"> I agree to the <a href="#" class="text-primary hover:underline">Terms of Service</a> and <a href="#" class="text-primary hover:underline">Privacy Policy</a>
+                    </label>
+                    <p class="form-error hidden"></p>
+                </div>
                 <button type="submit" class="w-full bg-gradient-to-r from-primary to-amber-500 text-white font-bold py-3.5 rounded-xl transition-all shadow-lg shadow-primary/30 hover:shadow-primary/40 hover:-translate-y-0.5 active:translate-y-0">Create Account</button>
             </form>
 
             <p class="text-center text-gray-500 dark:text-gray-400 text-sm">Already have an account? <a href="login.html" class="text-primary font-bold hover:underline">Sign In</a></p>
+
+            <p class="text-center text-gray-500 dark:text-gray-400 text-sm mt-6 pt-6 border-t border-gray-100 dark:border-gray-700">Looking to book a mural instead? <a href="contact.html#booking" class="text-primary font-bold hover:underline">Book a consultation</a></p>
         </div>
     </div>
 </section>

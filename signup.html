@@ -1,1 +1,35 @@
-﻿
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | ArtMural Studio</title>
+    <meta name="description" content="ArtMural Studio sign-up takes place on our account creation page. Continue to register to get started.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="register.html">
+    <meta http-equiv="refresh" content="0; url=register.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: { extend: { colors: { primary: '#d97706', dark: '#111827' } } }
+        }
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+    <main class="min-h-screen flex items-center justify-center px-4 text-center">
+        <div>
+            <img src="images/logo.svg" alt="ArtMural Studio logo" class="h-16 w-16 mx-auto mb-6">
+            <h1 class="text-2xl font-serif font-bold mb-3">Redirecting to sign up&hellip;</h1>
+            <p class="text-gray-600 dark:text-gray-400 mb-6">You are being taken to our account creation page.</p>
+            <a href="register.html" class="btn btn-primary">Continue to Create Account</a>
+        </div>
+    </main>
+    <script>window.location.replace('register.html');</script>
+</body>
+</html>

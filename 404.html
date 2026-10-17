@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 | ArtMural Studio</title>
+    <title>Page Not Found | ArtMural Studio</title>
+    <meta name="description" content="The page you were looking for could not be found. Return to ArtMural Studio to explore our murals and book a consultation.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/svg+xml" href="images/logo.svg">
     <link rel="stylesheet" href="css/style.css">
     <script>
+        document.documentElement.classList.add('js');
         tailwind.config = {
             darkMode: 'class',
             theme: { extend: { colors: { primary: '#d97706', dark: '#111827' } } }
@@ -24,16 +26,35 @@
 </head>
 <body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300">
 
+<div class="fixed top-5 right-5 z-50 flex items-center gap-2">
+    <button aria-label="Toggle dark mode" class="theme-toggle-btn w-11 h-11 rounded-full bg-white dark:bg-gray-800 shadow-lg border border-gray-200 dark:border-gray-700 text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-all hover:scale-105 focus:outline-none flex items-center justify-center">
+        <i class="theme-icon fas fa-moon text-lg"></i>
+    </button>
+    <button aria-label="Toggle right-to-left layout" class="rtl-toggle-btn w-11 h-11 rounded-full bg-white dark:bg-gray-800 shadow-lg border border-gray-200 dark:border-gray-700 text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-all hover:scale-105 focus:outline-none flex items-center justify-center text-sm font-bold">
+        RTL
+    </button>
+</div>
+
 <main>
 
-<section class="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-900 px-4 py-24">
-    <div class="max-w-md w-full bg-white dark:bg-gray-800 p-10 rounded-3xl shadow-2xl text-center border border-gray-100 dark:border-gray-700">
-        
-    <h1 class="text-8xl font-serif font-bold text-primary mb-4">404</h1>
-    <h2 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Canvas Not Found</h2>
-    <p class="text-gray-600 dark:text-gray-400 mb-8">The page you are looking for has been painted over or doesn't exist.</p>
-    <a href="index.html" class="inline-block bg-primary hover:bg-amber-600 text-white font-bold py-3 px-8 rounded-full transition-colors">Back to Home</a>
-
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden px-4 py-24">
+    <div class="absolute inset-0 bg-cover bg-center hero-bg" style="background-image: url('images/accent-wall.jpg');"></div>
+    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/90 via-gray-900/82 to-gray-950/95"></div>
+    <div class="relative z-10 max-w-2xl w-full text-center text-white reveal">
+        <img src="images/logo.svg" alt="ArtMural" class="h-16 w-16 mx-auto mb-6 rounded-2xl shadow-lg shadow-primary/20">
+        <p class="text-7xl sm:text-8xl font-serif font-bold text-primary mb-2">404</p>
+        <h1 class="text-3xl sm:text-4xl font-serif font-bold mb-5">This Wall Hasn't Been Painted Yet</h1>
+        <p class="text-lg text-gray-300 mb-10">The page you are looking for has been moved or painted over. Let's get you back to something beautiful.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="index.html" class="btn btn-primary"><i class="fas fa-home"></i> Back to Home</a>
+            <a href="portfolio.html" class="btn btn-outline-light">Explore Designs</a>
+        </div>
+        <div class="mt-12 flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm text-gray-300">
+            <a href="services.html" class="hover:text-primary transition-colors">Services</a>
+            <a href="portfolio.html" class="hover:text-primary transition-colors">Portfolio</a>
+            <a href="pricing.html" class="hover:text-primary transition-colors">Pricing</a>
+            <a href="contact.html#booking" class="hover:text-primary transition-colors">Book a Consultation</a>
+        </div>
     </div>
 </section>
 
